@@ -1,0 +1,15 @@
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Overview_Install\HelloDotnet\Hello_dotNet\bin\Debug\net6.0\Hello_dotNet.exe
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Overview_Install\HelloDotnet\Hello_dotNet\bin\Debug\net6.0\Hello_dotNet.deps.json
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Overview_Install\HelloDotnet\Hello_dotNet\bin\Debug\net6.0\Hello_dotNet.runtimeconfig.json
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Overview_Install\HelloDotnet\Hello_dotNet\bin\Debug\net6.0\Hello_dotNet.dll
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Overview_Install\HelloDotnet\Hello_dotNet\bin\Debug\net6.0\Hello_dotNet.pdb
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Overview_Install\HelloDotnet\Hello_dotNet\obj\Debug\net6.0\Hello_dotNet.csproj.AssemblyReference.cache
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Overview_Install\HelloDotnet\Hello_dotNet\obj\Debug\net6.0\Hello_dotNet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Overview_Install\HelloDotnet\Hello_dotNet\obj\Debug\net6.0\Hello_dotNet.AssemblyInfoInputs.cache
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Overview_Install\HelloDotnet\Hello_dotNet\obj\Debug\net6.0\Hello_dotNet.AssemblyInfo.cs
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Overview_Install\HelloDotnet\Hello_dotNet\obj\Debug\net6.0\Hello_dotNet.csproj.CoreCompileInputs.cache
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Overview_Install\HelloDotnet\Hello_dotNet\obj\Debug\net6.0\Hello_dotNet.dll
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Overview_Install\HelloDotnet\Hello_dotNet\obj\Debug\net6.0\refint\Hello_dotNet.dll
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Overview_Install\HelloDotnet\Hello_dotNet\obj\Debug\net6.0\Hello_dotNet.pdb
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Overview_Install\HelloDotnet\Hello_dotNet\obj\Debug\net6.0\Hello_dotNet.genruntimeconfig.cache
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Overview_Install\HelloDotnet\Hello_dotNet\obj\Debug\net6.0\ref\Hello_dotNet.dll
