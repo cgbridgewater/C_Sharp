@@ -1,2 +1,18 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// Initializing an empty list of Motorcycle Manufacturers that expects string values
+List<string> bikes = new List<string>();
+// Use the Add function in a similar fashion to push
+bikes.Add("Kawasaki");
+bikes.Add("Triumph");
+bikes.Add("BMW");
+bikes.Add("Moto Guzzi");
+bikes.Add("Harley Davidson");
+bikes.Add("Suzuki");
+// Accessing a generic list value is the same as an array
+Console.WriteLine(bikes[2]); //Prints "BMW", remember we start at 0!
+// To get the size of a List, we use Count instead of Length
+Console.WriteLine($"We currently know of {bikes.Count} motorcycle manufacturers.");
+
+
+foreach(string bike in bikes){
+    Console.WriteLine(bike);
+}
