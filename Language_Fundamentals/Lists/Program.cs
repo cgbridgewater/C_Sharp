@@ -75,3 +75,13 @@ Console.WriteLine(string.Join(", ", groceries));
 
 Random rand = new Random();
 Console.WriteLine($"Random item from list => {groceries[rand.Next(0,groceries.Count)]}");
+
+
+
+
+////// NEW LIST WITH values declared in the list
+List<string> nameList = new List<string> (new string[]{"steve", "mike", "tim"});
+
+foreach(string name in nameList){
+Console.WriteLine(name);
+}
