@@ -9,13 +9,13 @@ Vehicle MtnBike = new Vehicle("Yeti Mountain Bike", 1, "Black", false);
 Vehicle SchoolBus = new Vehicle("School Bus", 30, "Yellow", true);
 
 
-List<object> Vehicals = new List<object>();
-Vehicals.Add(Truck);
-Vehicals.Add(Outback);
-Vehicals.Add(MtnBike);
-Vehicals.Add(SchoolBus);
+List<object> MyVehicals = new List<object>();
+MyVehicals.Add(Truck);
+MyVehicals.Add(Outback);
+MyVehicals.Add(MtnBike);
+MyVehicals.Add(SchoolBus);
 
-foreach(Vehicle v in Vehicals){
+foreach(Vehicle v in MyVehicals){
     v.ShowInfo();
 }
 
