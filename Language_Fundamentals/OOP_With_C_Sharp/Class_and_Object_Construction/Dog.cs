@@ -2,6 +2,8 @@
 
 class Dog  // class structure  ALWAYS capitalized!!!!
 {
+////// FIELDS
+
     private string Name;  // <= fields, keep capitalized
     public string _Name   // <= getter
     { 
@@ -11,6 +13,10 @@ class Dog  // class structure  ALWAYS capitalized!!!!
     string Breed;
     string FurColor {get; set;}
     
+
+
+/////// CONSTRUCTORS
+
     // Notice how this is like a function taking in a parameter for name
     public Dog(string name, string breed, string fur){ // <= constructor call on the class and include variables assoacted to the field
         // Notice how we used a capital "N" for our Name above, but a lower case "n" for our parameter
@@ -19,6 +25,10 @@ class Dog  // class structure  ALWAYS capitalized!!!!
         Breed = breed;
         FurColor = fur;
     }
+
+
+
+/////// METHODS
 
     void Bark(){  // <= methods
         Console.WriteLine("Bark! Bark!");
