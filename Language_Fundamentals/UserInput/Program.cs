@@ -11,7 +11,7 @@
 ////// Fails if not a number
 
 
-// This can catch string or number! 
+// This can catch string or number!
 Console.WriteLine("Type a number, then hit enter");
 string NumberInput = Console.ReadLine();
 if(Int32.TryParse(NumberInput, out int j)){
