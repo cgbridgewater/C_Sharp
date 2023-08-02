@@ -1,0 +1,15 @@
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Class_and_Object_Construction\obj\Debug\net6.0\Class_and_Object_Construction.csproj.AssemblyReference.cache
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Class_and_Object_Construction\obj\Debug\net6.0\Class_and_Object_Construction.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Class_and_Object_Construction\obj\Debug\net6.0\Class_and_Object_Construction.AssemblyInfoInputs.cache
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Class_and_Object_Construction\obj\Debug\net6.0\Class_and_Object_Construction.AssemblyInfo.cs
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Class_and_Object_Construction\obj\Debug\net6.0\Class_and_Object_Construction.csproj.CoreCompileInputs.cache
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Class_and_Object_Construction\bin\Debug\net6.0\Class_and_Object_Construction.exe
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Class_and_Object_Construction\bin\Debug\net6.0\Class_and_Object_Construction.deps.json
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Class_and_Object_Construction\bin\Debug\net6.0\Class_and_Object_Construction.runtimeconfig.json
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Class_and_Object_Construction\bin\Debug\net6.0\Class_and_Object_Construction.dll
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Class_and_Object_Construction\bin\Debug\net6.0\Class_and_Object_Construction.pdb
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Class_and_Object_Construction\obj\Debug\net6.0\Class_and_Object_Construction.dll
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Class_and_Object_Construction\obj\Debug\net6.0\refint\Class_and_Object_Construction.dll
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Class_and_Object_Construction\obj\Debug\net6.0\Class_and_Object_Construction.pdb
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Class_and_Object_Construction\obj\Debug\net6.0\Class_and_Object_Construction.genruntimeconfig.cache
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Class_and_Object_Construction\obj\Debug\net6.0\ref\Class_and_Object_Construction.dll
