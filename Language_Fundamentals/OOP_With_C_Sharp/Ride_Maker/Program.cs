@@ -14,6 +14,7 @@ MyVehicals.Add(Truck);
 MyVehicals.Add(Outback);
 MyVehicals.Add(MtnBike);
 MyVehicals.Add(SchoolBus);
+MyVehicals.Add(SchoolBus = new Vehicle("miata", "red"));
 
 foreach(Vehicle v in MyVehicals){
     v.ShowInfo();
