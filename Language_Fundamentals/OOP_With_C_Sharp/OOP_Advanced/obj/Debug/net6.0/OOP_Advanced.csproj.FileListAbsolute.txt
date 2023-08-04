@@ -1,0 +1,15 @@
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\OOP_Advanced\bin\Debug\net6.0\OOP_Advanced.exe
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\OOP_Advanced\bin\Debug\net6.0\OOP_Advanced.deps.json
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\OOP_Advanced\bin\Debug\net6.0\OOP_Advanced.runtimeconfig.json
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\OOP_Advanced\bin\Debug\net6.0\OOP_Advanced.dll
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\OOP_Advanced\bin\Debug\net6.0\OOP_Advanced.pdb
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\OOP_Advanced\obj\Debug\net6.0\OOP_Advanced.csproj.AssemblyReference.cache
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\OOP_Advanced\obj\Debug\net6.0\OOP_Advanced.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\OOP_Advanced\obj\Debug\net6.0\OOP_Advanced.AssemblyInfoInputs.cache
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\OOP_Advanced\obj\Debug\net6.0\OOP_Advanced.AssemblyInfo.cs
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\OOP_Advanced\obj\Debug\net6.0\OOP_Advanced.csproj.CoreCompileInputs.cache
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\OOP_Advanced\obj\Debug\net6.0\OOP_Advanced.dll
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\OOP_Advanced\obj\Debug\net6.0\refint\OOP_Advanced.dll
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\OOP_Advanced\obj\Debug\net6.0\OOP_Advanced.pdb
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\OOP_Advanced\obj\Debug\net6.0\OOP_Advanced.genruntimeconfig.cache
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\OOP_Advanced\obj\Debug\net6.0\ref\OOP_Advanced.dll
