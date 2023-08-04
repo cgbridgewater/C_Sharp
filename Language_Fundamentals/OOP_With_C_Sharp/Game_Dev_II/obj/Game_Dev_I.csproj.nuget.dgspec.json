@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cgbri\\Desktop\\Coding Dojo\\C#\\Language_Fundamentals\\OOP_With_C_Sharp\\Game_Dev_I\\Game_Dev_I.csproj": {}
+    "C:\\Users\\cgbri\\Desktop\\Coding Dojo\\C#\\Language_Fundamentals\\OOP_With_C_Sharp\\Game_Dev_II\\Game_Dev_I.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cgbri\\Desktop\\Coding Dojo\\C#\\Language_Fundamentals\\OOP_With_C_Sharp\\Game_Dev_I\\Game_Dev_I.csproj": {
+    "C:\\Users\\cgbri\\Desktop\\Coding Dojo\\C#\\Language_Fundamentals\\OOP_With_C_Sharp\\Game_Dev_II\\Game_Dev_I.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cgbri\\Desktop\\Coding Dojo\\C#\\Language_Fundamentals\\OOP_With_C_Sharp\\Game_Dev_I\\Game_Dev_I.csproj",
+        "projectUniqueName": "C:\\Users\\cgbri\\Desktop\\Coding Dojo\\C#\\Language_Fundamentals\\OOP_With_C_Sharp\\Game_Dev_II\\Game_Dev_I.csproj",
         "projectName": "Game_Dev_I",
-        "projectPath": "C:\\Users\\cgbri\\Desktop\\Coding Dojo\\C#\\Language_Fundamentals\\OOP_With_C_Sharp\\Game_Dev_I\\Game_Dev_I.csproj",
+        "projectPath": "C:\\Users\\cgbri\\Desktop\\Coding Dojo\\C#\\Language_Fundamentals\\OOP_With_C_Sharp\\Game_Dev_II\\Game_Dev_I.csproj",
         "packagesPath": "C:\\Users\\cgbri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cgbri\\Desktop\\Coding Dojo\\C#\\Language_Fundamentals\\OOP_With_C_Sharp\\Game_Dev_I\\obj\\",
+        "outputPath": "C:\\Users\\cgbri\\Desktop\\Coding Dojo\\C#\\Language_Fundamentals\\OOP_With_C_Sharp\\Game_Dev_II\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\cgbri\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -1,5 +1,5 @@
 
-class Attack{
+public class Attack{
 
     public string Name;
     public int DamageAmount;
