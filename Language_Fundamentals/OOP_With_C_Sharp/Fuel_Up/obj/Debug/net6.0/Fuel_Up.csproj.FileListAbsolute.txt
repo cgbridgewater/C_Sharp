@@ -1,0 +1,15 @@
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Fuel_Up\bin\Debug\net6.0\Fuel_Up.exe
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Fuel_Up\bin\Debug\net6.0\Fuel_Up.deps.json
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Fuel_Up\bin\Debug\net6.0\Fuel_Up.runtimeconfig.json
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Fuel_Up\bin\Debug\net6.0\Fuel_Up.dll
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Fuel_Up\bin\Debug\net6.0\Fuel_Up.pdb
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Fuel_Up\obj\Debug\net6.0\Fuel_Up.csproj.AssemblyReference.cache
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Fuel_Up\obj\Debug\net6.0\Fuel_Up.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Fuel_Up\obj\Debug\net6.0\Fuel_Up.AssemblyInfoInputs.cache
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Fuel_Up\obj\Debug\net6.0\Fuel_Up.AssemblyInfo.cs
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Fuel_Up\obj\Debug\net6.0\Fuel_Up.csproj.CoreCompileInputs.cache
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Fuel_Up\obj\Debug\net6.0\Fuel_Up.dll
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Fuel_Up\obj\Debug\net6.0\refint\Fuel_Up.dll
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Fuel_Up\obj\Debug\net6.0\Fuel_Up.pdb
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Fuel_Up\obj\Debug\net6.0\Fuel_Up.genruntimeconfig.cache
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Fuel_Up\obj\Debug\net6.0\ref\Fuel_Up.dll

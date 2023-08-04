@@ -1,0 +1,15 @@
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Abstract_Classes\obj\Debug\net6.0\Abstract_Classes.csproj.AssemblyReference.cache
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Abstract_Classes\obj\Debug\net6.0\Abstract_Classes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Abstract_Classes\obj\Debug\net6.0\Abstract_Classes.AssemblyInfoInputs.cache
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Abstract_Classes\obj\Debug\net6.0\Abstract_Classes.AssemblyInfo.cs
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Abstract_Classes\obj\Debug\net6.0\Abstract_Classes.csproj.CoreCompileInputs.cache
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Abstract_Classes\bin\Debug\net6.0\Abstract_Classes.exe
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Abstract_Classes\bin\Debug\net6.0\Abstract_Classes.deps.json
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Abstract_Classes\bin\Debug\net6.0\Abstract_Classes.runtimeconfig.json
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Abstract_Classes\bin\Debug\net6.0\Abstract_Classes.dll
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Abstract_Classes\bin\Debug\net6.0\Abstract_Classes.pdb
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Abstract_Classes\obj\Debug\net6.0\Abstract_Classes.dll
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Abstract_Classes\obj\Debug\net6.0\refint\Abstract_Classes.dll
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Abstract_Classes\obj\Debug\net6.0\Abstract_Classes.pdb
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Abstract_Classes\obj\Debug\net6.0\Abstract_Classes.genruntimeconfig.cache
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Abstract_Classes\obj\Debug\net6.0\ref\Abstract_Classes.dll
