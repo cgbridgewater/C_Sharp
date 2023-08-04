@@ -1,0 +1,15 @@
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Interfaces\obj\Debug\net6.0\Interfaces.csproj.AssemblyReference.cache
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Interfaces\obj\Debug\net6.0\Interfaces.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Interfaces\obj\Debug\net6.0\Interfaces.AssemblyInfoInputs.cache
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Interfaces\obj\Debug\net6.0\Interfaces.AssemblyInfo.cs
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Interfaces\obj\Debug\net6.0\Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Interfaces\bin\Debug\net6.0\Interfaces.exe
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Interfaces\bin\Debug\net6.0\Interfaces.deps.json
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Interfaces\bin\Debug\net6.0\Interfaces.runtimeconfig.json
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Interfaces\bin\Debug\net6.0\Interfaces.dll
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Interfaces\bin\Debug\net6.0\Interfaces.pdb
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Interfaces\obj\Debug\net6.0\Interfaces.dll
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Interfaces\obj\Debug\net6.0\refint\Interfaces.dll
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Interfaces\obj\Debug\net6.0\Interfaces.pdb
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Interfaces\obj\Debug\net6.0\Interfaces.genruntimeconfig.cache
+C:\Users\cgbri\Desktop\Coding Dojo\C#\Language_Fundamentals\OOP_With_C_Sharp\Interfaces\obj\Debug\net6.0\ref\Interfaces.dll
