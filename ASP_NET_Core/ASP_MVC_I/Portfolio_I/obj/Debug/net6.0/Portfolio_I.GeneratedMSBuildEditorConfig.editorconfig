@@ -14,3 +14,23 @@ build_property.SupportLocalizedComponentNames =
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = C:\Users\cgbri\Desktop\Coding Dojo\C#\ASP_NET_Core\ASP_MVC_I\Portfolio_I
 build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/cgbri/Desktop/Coding Dojo/C\#/ASP_NET_Core/ASP_MVC_I/Portfolio_I/Views/Hello/Contacts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVsbG9cQ29udGFjdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cgbri/Desktop/Coding Dojo/C\#/ASP_NET_Core/ASP_MVC_I/Portfolio_I/Views/Hello/CSharp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVsbG9cQ1NoYXJwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cgbri/Desktop/Coding Dojo/C\#/ASP_NET_Core/ASP_MVC_I/Portfolio_I/Views/Hello/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVsbG9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cgbri/Desktop/Coding Dojo/C\#/ASP_NET_Core/ASP_MVC_I/Portfolio_I/Views/Hello/Projects.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVsbG9cUHJvamVjdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cgbri/Desktop/Coding Dojo/C\#/ASP_NET_Core/ASP_MVC_I/Portfolio_I/Views/Hello/RazorFun.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVsbG9cUmF6b3JGdW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 

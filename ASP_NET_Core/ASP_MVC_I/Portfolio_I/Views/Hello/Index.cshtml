@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Hello!</title>
+    </head>
+    <body>
+
+        <h1>Welcome to C# from our first cshtml file!!</h1>
+
+        @{    // C# //
+            List<string> StringList = new List<string>() {"one", "two", "three", "four"};
+            <!-- We switch back to HTML -->
+            <p>Here is my list of words:</p>
+            <!-- We switch back to C#, but we don't need {} since a foreach loop makes its own code block -->
+            @foreach(string word in StringList)    
+            {        
+                <div>            
+                    <p>@word</p>
+                    @if(word.Length < 4)            
+                    {                 
+                        <p>@word is a short word</p>            
+                    }       
+                </div>    
+            }
+        }    @* // END C# // *@
+    </body>
+</html>

@@ -19,3 +19,5 @@ C:\Users\cgbri\Desktop\Coding Dojo\C#\ASP_NET_Core\ASP_MVC_I\Portfolio_I\obj\Deb
 C:\Users\cgbri\Desktop\Coding Dojo\C#\ASP_NET_Core\ASP_MVC_I\Portfolio_I\obj\Debug\net6.0\Portfolio_I.pdb
 C:\Users\cgbri\Desktop\Coding Dojo\C#\ASP_NET_Core\ASP_MVC_I\Portfolio_I\obj\Debug\net6.0\Portfolio_I.genruntimeconfig.cache
 C:\Users\cgbri\Desktop\Coding Dojo\C#\ASP_NET_Core\ASP_MVC_I\Portfolio_I\obj\Debug\net6.0\ref\Portfolio_I.dll
+C:\Users\cgbri\Desktop\Coding Dojo\C#\ASP_NET_Core\ASP_MVC_I\Portfolio_I\obj\Debug\net6.0\Portfolio_I.RazorAssemblyInfo.cache
+C:\Users\cgbri\Desktop\Coding Dojo\C#\ASP_NET_Core\ASP_MVC_I\Portfolio_I\obj\Debug\net6.0\Portfolio_I.RazorAssemblyInfo.cs

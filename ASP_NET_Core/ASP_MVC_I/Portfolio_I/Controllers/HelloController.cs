@@ -4,21 +4,34 @@ public class HelloController : Controller
 { 
 
     [HttpGet("")]
-    public string Index()
+    public ViewResult Index()
     {
-        return "This is my index!";
+        return View("Index");
     }
+    
 
     [HttpGet("projects")]
-    public string Projects()
+    public ViewResult Projects()
     {
-        return "These are my projects";
+        return View("Projects");
     }
 
-    [HttpGet("Contact")]
-    public string Contact()
+    [HttpGet("contacts")]
+    public ViewResult Contact()
     {
-        return "This is my contact!";
+        return View("Contacts");
+    }
+
+    [HttpGet("csharp")]
+    public ViewResult CSharp()
+    {
+        return View("CSharp");
+    }
+
+    [HttpGet("razorfun")]
+    public ViewResult RazorFun()
+    {
+        return View("RazorFun");
     }
 
 }
