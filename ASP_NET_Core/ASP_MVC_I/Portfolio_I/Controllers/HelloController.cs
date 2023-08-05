@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 namespace Portfolio_I.Controllers;   
-public class HelloController : Controller   // Remember inheritance?    
+public class HelloController : Controller
 { 
 
     [HttpGet("")]
