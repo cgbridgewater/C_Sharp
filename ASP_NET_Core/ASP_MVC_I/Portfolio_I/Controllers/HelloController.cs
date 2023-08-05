@@ -6,6 +6,8 @@ public class HelloController : Controller
     [HttpGet("")]
     public ViewResult Index()
     {
+        ViewBag.Example = "Hello World!";
+        ViewBag.Name = "Chris Bridgewater";
         return View("Index");
     }
     
@@ -13,12 +15,14 @@ public class HelloController : Controller
     [HttpGet("projects")]
     public ViewResult Projects()
     {
+        ViewBag.Test = "TEST!";
         return View("Projects");
     }
 
     [HttpGet("contacts")]
     public ViewResult Contact()
     {
+        ViewBag.FoodList = new List<string>() {"Apple Pie", "Pizza", "Cinnamon Rolls", "Lasagna", "Donuts", "Chocolate Cake", "Burritos"};
         return View("Contacts");
     }
 

@@ -3,26 +3,23 @@
     <head>
         <meta charset="utf-8">
         <title>Hello!</title>
+            <!-- In this context '~' refers to the wwwroot folder  -->      
+    <link rel="stylesheet" href="~/css/style.css"/> 
     </head>
     <body>
 
         <h1>Welcome to C# from our first cshtml file!!</h1>
+    <a href="/contacts">Contacts</a><br>
+    <a href="/razorfun">Razor Fun</a><br>
+    <a href="/csharp">C# </a><br>
+    <a href="/projects">Projects</a><br>
+    <h1>@ViewBag.Example</h1>
+    <h4>☝️from view bag☝️</h4>
 
-        @{    // C# //
-            List<string> StringList = new List<string>() {"one", "two", "three", "four"};
-            <!-- We switch back to HTML -->
-            <p>Here is my list of words:</p>
-            <!-- We switch back to C#, but we don't need {} since a foreach loop makes its own code block -->
-            @foreach(string word in StringList)    
-            {        
-                <div>            
-                    <p>@word</p>
-                    @if(word.Length < 4)            
-                    {                 
-                        <p>@word is a short word</p>            
-                    }       
-                </div>    
-            }
-        }    @* // END C# // *@
+    <H2>My Name: @ViewBag.Name</H2>
+
+    <p>@ViewBag.Example</p>
+
+    <img class="UserImage" src="~/images/Default_User.jpg" alt="default user"/>  
     </body>
 </html>

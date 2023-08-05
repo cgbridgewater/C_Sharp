@@ -1,11 +1,54 @@
 {
   "Version": 1,
-  "Hash": "DtP2Rzr13WfHYnp6RrsrP8jmVoC/r1JqZOfVzXWtaT0=",
+  "Hash": "SEA9I5/8Ow+E5p0aJJnv+DYURq2QDieXTpyWv0mBMIk=",
   "Source": "Portfolio_I",
   "BasePath": "_content/Portfolio_I",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "Portfolio_I\\wwwroot",
+      "Source": "Portfolio_I",
+      "ContentRoot": "C:\\Users\\cgbri\\Desktop\\Coding Dojo\\C#\\ASP_NET_Core\\ASP_MVC_I\\Portfolio_I\\wwwroot\\",
+      "BasePath": "_content/Portfolio_I",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\cgbri\\Desktop\\Coding Dojo\\C#\\ASP_NET_Core\\ASP_MVC_I\\Portfolio_I\\wwwroot\\css\\style.css",
+      "SourceId": "Portfolio_I",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\cgbri\\Desktop\\Coding Dojo\\C#\\ASP_NET_Core\\ASP_MVC_I\\Portfolio_I\\wwwroot\\",
+      "BasePath": "_content/Portfolio_I",
+      "RelativePath": "css/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\style.css"
+    },
+    {
+      "Identity": "C:\\Users\\cgbri\\Desktop\\Coding Dojo\\C#\\ASP_NET_Core\\ASP_MVC_I\\Portfolio_I\\wwwroot\\images\\Default_User.jpg",
+      "SourceId": "Portfolio_I",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\cgbri\\Desktop\\Coding Dojo\\C#\\ASP_NET_Core\\ASP_MVC_I\\Portfolio_I\\wwwroot\\",
+      "BasePath": "_content/Portfolio_I",
+      "RelativePath": "images/Default_User.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Default_User.jpg"
+    }
+  ]
 }

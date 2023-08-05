@@ -6,5 +6,16 @@
     </head>
     <body>
         <h1>Contacts file</h1>
+        <a href="/">HOME</a><br>
+        <a href="/razorfun">Razor Fun</a><br>
+        <a href="/csharp">C# </a><br>
+        <a href="/projects">Projects </a><br>
+
+        @{
+            foreach(string food in @ViewBag.FoodList)
+            {
+                <h3>@food</h3>
+            }
+        }
     </body>
 </html>
