@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Projects!</title>
+    </head>
+    <body>
+        <h1 style="text-align: center;">Here are some delicious foods!</h1>
+    @{    
+        List<string> FoodList = new List<string>() {"Apple Pie", "Pizza", "Cinnamon Rolls", "Lasagna", "Donuts", "Chocolate Cake", "Burritos"};
+        foreach(string food in FoodList)    
+        {        
+            // We can render HTML from within C# code!
+            // We just have to remember to bring @ back if we want to render variables
+                if(food[0] is 'C')
+                {
+                    <p style="text-align: center; color: red; font-weight:800;">@food</p> 
+                } else {
+                    <p style="text-align: center;">@food</p> 
+                }
+        }
+    }
+    </body>
+</html>
