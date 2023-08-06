@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "H2BcrmDrFFxhU43tgHkWiTTdC4ziGEXutAtq0nov0J0=",
+  "Source": "Portfolio_II",
+  "BasePath": "_content/Portfolio_II",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Portfolio_II\\wwwroot",
+      "Source": "Portfolio_II",
+      "ContentRoot": "C:\\Users\\cgbri\\Desktop\\Coding Dojo\\C#\\ASP_NET_Core\\ASP_MVC_I\\Portfolio_II\\wwwroot\\",
+      "BasePath": "_content/Portfolio_II",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\cgbri\\Desktop\\Coding Dojo\\C#\\ASP_NET_Core\\ASP_MVC_I\\Portfolio_II\\wwwroot\\css\\style.css",
+      "SourceId": "Portfolio_II",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\cgbri\\Desktop\\Coding Dojo\\C#\\ASP_NET_Core\\ASP_MVC_I\\Portfolio_II\\wwwroot\\",
+      "BasePath": "_content/Portfolio_II",
+      "RelativePath": "css/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\style.css"
+    }
+  ]
+}
