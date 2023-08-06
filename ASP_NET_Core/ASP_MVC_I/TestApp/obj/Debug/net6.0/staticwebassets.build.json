@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "ZpKIsZNaFtKaKxK3Tp0WKqR0bSrPdW7cSCZmwMCHV8k=",
+  "Source": "TestApp",
+  "BasePath": "_content/TestApp",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "TestApp\\wwwroot",
+      "Source": "TestApp",
+      "ContentRoot": "C:\\Users\\cgbri\\Desktop\\Coding Dojo\\C#\\ASP_NET_Core\\ASP_MVC_I\\TestApp\\wwwroot\\",
+      "BasePath": "_content/TestApp",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\cgbri\\Desktop\\Coding Dojo\\C#\\ASP_NET_Core\\ASP_MVC_I\\TestApp\\wwwroot\\css\\style.css",
+      "SourceId": "TestApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\cgbri\\Desktop\\Coding Dojo\\C#\\ASP_NET_Core\\ASP_MVC_I\\TestApp\\wwwroot\\",
+      "BasePath": "_content/TestApp",
+      "RelativePath": "css/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\style.css"
+    }
+  ]
+}

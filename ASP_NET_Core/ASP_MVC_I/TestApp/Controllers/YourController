@@ -1,0 +1,25 @@
+using Microsoft.AspNetCore.Mvc;
+namespace TestApp.Controllers;   
+public class YourController : Controller
+{ 
+    [HttpGet("")]
+    public ViewResult Index()
+    {
+        return View();
+    }
+        
+    // And here is an IActionResult
+    [HttpGet("result/{favoriteResponse}")]
+    public IActionResult ItDepends(string favoriteResponse)
+    {
+        if(favoriteResponse == "Redirect")
+        {
+            return RedirectToAction("Index");
+        } else if (favoriteResponse == "Json") {
+            return Json(new {favoriteResponse = favoriteResponse});
+        } else {
+            // This route will require that an "ItDepends.cshtml" exists
+            return View();
+        }
+    }
+} 
