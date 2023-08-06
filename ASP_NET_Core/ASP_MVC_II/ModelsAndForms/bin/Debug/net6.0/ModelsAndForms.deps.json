@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "ModelsAndForms/1.0.0": {
+        "runtime": {
+          "ModelsAndForms.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ModelsAndForms/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
