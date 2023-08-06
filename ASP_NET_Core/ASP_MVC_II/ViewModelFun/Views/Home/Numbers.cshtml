@@ -1,0 +1,18 @@
+@{
+    ViewData["Title"] = "Numbers";
+}
+
+@model List<int>
+
+
+<h1 class="text-center">Here are some @ViewData["Title"]</h1>
+
+<ul class="list-group justify-content-center align-items-center">
+    @{
+        foreach(int num in @Model){
+            <li class="list-group-item w-10 text-center">@num</li>
+        }
+    }
+</ul>
+
+

@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@* @model Friend *@
+@* @model List<string> *@
+@model List<Friend>
+
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+
+        @* <h3>First Name is: @Model.FirstName</h3>
+        <h3>Last Name is: @Model.LastName</h3> *@
+        @* <h3>My Friends name is: @Model.FirstName @Model.LastName</h3> *@
+
+
+        @* <h2>Here are some names!</h2>
+        @foreach(string name in Model){
+            <p>@name</p>
+        } *@
+        
+        <h2>Here are some names!</h2>
+        @foreach(Friend name in Model){
+            <p>@name.FirstName @name.LastName</p>
+        }
+
+
+
+</div>
