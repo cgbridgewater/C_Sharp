@@ -4,13 +4,24 @@
 }
 
 .OuterContainer {
-    padding: 20px
+    padding-top: 15%;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://thumbs.gfycat.com/ActiveChubbyAlligator-size_restricted.gif);
+    /* background-image: url(https://images.trutv.com/tru/w_1360/https%3A%2F%2Fi.cdn.trutv.com%2Fassets%2Ftru%2Fprod%2Fimages%2F2022%2F11%2FElf-1600x900.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 h1 {
     font-size: 60px;
     text-align: center;
-    color: green;
+    color:  rgb(11, 211, 11);
+}
+
+h2,h3,p {
+    color: whitesmoke;
+    font-weight: bolder;
 }
 
 .xmas {
@@ -29,7 +40,7 @@ h1 {
     width: 250px;
     padding: 15px;
     text-align: center;
-    border: 3px double green;
+    border: 6px double rgb(11, 211, 11);
 }
 
 .Box_3 {
@@ -45,7 +56,7 @@ h1 {
 
 .ToGo {
     text-align: center;
-    color:green;
+    color: rgb(11, 211, 11);
     font-size: 40px;
 }
 
