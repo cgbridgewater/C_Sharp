@@ -1,0 +1,59 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+.OuterContainer {
+    padding: 20px
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+    color: green;
+}
+
+.xmas {
+    color: red;
+    
+}
+
+.Container{
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.Box_1, .Box_2 {
+    width: 250px;
+    padding: 15px;
+    text-align: center;
+    border: 3px double green;
+}
+
+.Box_3 {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.Buddy {
+    width: 350px;
+    aspect-ratio: 1.555;
+    margin:0 auto;  
+}
+
+.ToGo {
+    text-align: center;
+    color:green;
+    font-size: 40px;
+}
+
+.ToGoGreen {
+    color: red;
+}
+
+.ToGo2 {
+    margin: 5px 40px 0 0;
+    text-align: end;
+}
