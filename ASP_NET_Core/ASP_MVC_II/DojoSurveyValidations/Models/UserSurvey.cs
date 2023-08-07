@@ -16,6 +16,9 @@ public class UserSurvey
     [MinLength(3, ErrorMessage = "Must be at least 3 characters!")]
     public string Location {get; set;}
 
-    [StringLength(20, ErrorMessage = "Must be at least 20 characters!")]
-    public string Comments {get; set;}
+    [StringLength(255, MinimumLength=20 , ErrorMessage = "Must be at least 20 characters!")] // THIS PLUS "?" after string
+    public string? Comments {get; set;} // "?" allows a null to be accepted!
 }
+
+
+
