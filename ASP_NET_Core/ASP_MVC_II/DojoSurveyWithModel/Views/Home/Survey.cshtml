@@ -1,0 +1,43 @@
+﻿@{
+    ViewData["Title"] = "Dojo Survey Page";
+}
+
+
+<div class="text-center">
+<h1>@ViewData["Title"]</h1>
+        <form class="Form" action="/register" method="post">    
+            <div class="Flex">
+                <label>Your Name:</label>    
+                <input class="Input" type="text" name="Name">
+            </div>
+            <br>
+            <div class="Flex">
+                <label>Dojo Location:</label>    
+                <select class="Input" name="Location">
+                    <option value="SanJose">San Jose</option>        
+                    <option value="Seattle">Seattle</option>        
+                    <option value="Chicago">Chicago</option>        
+                    <option value="OnLine">On-Line</option>    
+                </select>
+            </div>
+            <br>
+            <div class="Flex">
+                <label>Language:</label>    
+                <select class="Input" name="Language">
+                    <option value="CSharp">C Sharp</option>        
+                    <option value="Python">Python</option>        
+                    <option value="Javascript">Javascript</option>        
+                    <option value="Java">Java</option>    
+                </select>
+            </div>
+            <br>
+            <div class="Flex">
+                <label>Comments</label>    
+                <textarea  class="Input" type="text" name="Comments"></textarea> 
+            </div>
+            <br>
+            <input class="Button" type="submit" value="Submit"/>
+        </form>
+
+</div>
+
