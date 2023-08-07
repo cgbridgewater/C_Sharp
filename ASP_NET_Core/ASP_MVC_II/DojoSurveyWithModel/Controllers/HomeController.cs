@@ -14,11 +14,13 @@ public class HomeController : Controller
         _logger = logger;
     }
 
+    [HttpGet("")]
     public IActionResult Index()
     {
         return View();
     }
 
+    [HttpGet("survey")]
     public IActionResult Survey()
     {
         return View();
