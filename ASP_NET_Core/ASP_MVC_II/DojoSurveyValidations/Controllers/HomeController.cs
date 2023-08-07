@@ -6,6 +6,7 @@ namespace DojoSurveyValidations.Controllers;
 
 public class HomeController : Controller
 {
+    static UserSurvey user;
     private readonly ILogger<HomeController> _logger;
 
     public HomeController(ILogger<HomeController> logger)
@@ -13,14 +14,29 @@ public class HomeController : Controller
         _logger = logger;
     }
 
+    [HttpGet("")]
     public IActionResult Index()
     {
         return View();
     }
 
-    public IActionResult Privacy()
+    [HttpPost("")]
+    public IActionResult Create(UserSurvey newUser)
     {
-        return View();
+        if(ModelState.IsValid)
+        {
+            user=newUser;
+            return RedirectToAction("Results");
+        }
+        else{
+            return View("Index");
+        }
+    }
+
+    [HttpGet("results")]
+    public IActionResult Results()
+    {
+        return View(user);
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
