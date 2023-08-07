@@ -3,9 +3,14 @@
     ViewData["Title"] = "Results";
 }
 @model User
+@{
+    DateTime CurrentTime = DateTime.Now;
+    string date = CurrentTime.ToString("yyyy-MM-dd");
+    DateTime eighteen = CurrentTime.AddYears(-18);
+    string eighteenyrsago = eighteen.ToString("yyyy-MM-dd");
 
+}
 <h1 class="Center">@ViewData["Title"]</h1>
-
 
     <div class="ResultsContainer">
         <H2 class="Center">Submitted Info</H2>
@@ -17,6 +22,13 @@
         <div class="Flex">
             <h3>Email:</h3>
             <h3>@Model.Email</h3>
+        </div>
+
+        <div class="Flex">
+            <h3>Birthday:</h3>
+            <h3>@Model.Birthday.ToString("dd-MM-yyyy")</h3>
+
+
         </div>
 
     </div>

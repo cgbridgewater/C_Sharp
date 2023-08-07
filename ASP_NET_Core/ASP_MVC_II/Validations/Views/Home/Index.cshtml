@@ -26,6 +26,13 @@
         </div>
             <span class="Validation" asp-validation-for="Password"></span>
         <br>
+
+        <div class="Flex">
+            <label asp-for="Birthday"></label>    
+            <input asp-for="Birthday" type="date" class="Input">
+        </div>
+            <span class="Validation" asp-validation-for="Birthday"></span>
+        <br>
         <input class="Button" type="submit" value="Submit"/>
     </form>
 
