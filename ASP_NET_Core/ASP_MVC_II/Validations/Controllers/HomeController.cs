@@ -6,6 +6,7 @@ namespace Validations.Controllers;
 
 public class HomeController : Controller
 {
+    static User user;
     private readonly ILogger<HomeController> _logger;
 
     public HomeController(ILogger<HomeController> logger)
@@ -13,14 +14,23 @@ public class HomeController : Controller
         _logger = logger;
     }
 
+    [HttpGet("")]
     public IActionResult Index()
     {
         return View();
     }
 
-    public IActionResult Privacy()
+    [HttpGet("results")]
+    public IActionResult Results()
     {
-        return View();
+        return View(user);
+    }
+
+    [HttpPost("register")]
+    public IActionResult Register(User newUser)
+    {
+        user = newUser;
+        return RedirectToAction("Results");
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
