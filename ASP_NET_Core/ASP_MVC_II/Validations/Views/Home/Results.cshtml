@@ -1,15 +1,10 @@
 ﻿
 @{
     ViewData["Title"] = "Results";
+    string birthday = @Model.Birthday.ToString("MMMM d") + (@Model.Birthday.Day == 1 ? "st" : (@Model.Birthday.Day == 2 ? "nd" : (@Model.Birthday.Day == 3 ? "rd" : "th"))) + @Model.Birthday.ToString(", yyyy");
 }
 @model User
-@{
-    DateTime CurrentTime = DateTime.Now;
-    string date = CurrentTime.ToString("yyyy-MM-dd");
-    DateTime eighteen = CurrentTime.AddYears(-18);
-    string eighteenyrsago = eighteen.ToString("yyyy-MM-dd");
 
-}
 <h1 class="Center">@ViewData["Title"]</h1>
 
     <div class="ResultsContainer">
@@ -26,10 +21,14 @@
 
         <div class="Flex">
             <h3>Birthday:</h3>
-            <h3>@Model.Birthday.ToString("dd-MM-yyyy")</h3>
-
-
+            <h3>@birthday</h3>
         </div>
+
+        <div class="Flex">
+            <h3>Birthday:</h3>
+            <h3>@Model.OddNumber</h3>
+        </div>
+
 
     </div>
     <div class="LinkContainer">

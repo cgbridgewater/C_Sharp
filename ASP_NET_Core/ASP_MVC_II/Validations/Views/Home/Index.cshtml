@@ -1,7 +1,10 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+    DateTime CurrentTime = DateTime.Now;
+    string RightNow = CurrentTime.ToString("MM-dd-yyyy");
 }
 @model User
+
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
@@ -29,12 +32,22 @@
 
         <div class="Flex">
             <label asp-for="Birthday"></label>    
-            <input asp-for="Birthday" type="date" class="Input">
+            <input asp-for="Birthday" type="date" class="Input" placeholder(RightNow) >
         </div>
             <span class="Validation" asp-validation-for="Birthday"></span>
+        <br>
+
+        <div class="Flex">
+            <label asp-for="OddNumber"></label>    
+            <input asp-for="OddNumber" type="number" step="1" value="0" class="Input">
+        </div>
+            <span class="Validation" asp-validation-for="OddNumber"></span>
         <br>
         <input class="Button" type="submit" value="Submit"/>
     </form>
 
+    <h4>My session user's name is: @Context.Session.GetString("UserName")</h4>
+    <h4>My session user's name is: @Context.Session.GetInt32("Digit")</h4>
+    
 </div>
 

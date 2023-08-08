@@ -33,6 +33,10 @@ public class User
     [DataType(DataType.Date)]
     [ValidateDate]
     public DateTime Birthday {get;set;}
+
+
+    [IsOdd]
+    public int OddNumber {get;set;}
 }
 
 public class ValidateDateAttribute : ValidationAttribute
@@ -43,16 +47,26 @@ protected override ValidationResult? IsValid(object? value, ValidationContext va
         string date = CurrentTime.ToString("yyyy-MM-dd");
         DateTime eighteen = CurrentTime.AddYears(-18);
 
-        if (value == null)
-        {
-            return new ValidationResult("Date must be older than today");
-        } 
         if ((DateTime)value > eighteen)
         {
-            return new ValidationResult("Date must be older than today");
+            return new ValidationResult("You must be 18 or older to register!");
         } 
         
         else {
+            return ValidationResult.Success;
+        }
+    }
+}
+
+
+public class IsOddAttribute : ValidationAttribute
+{
+  protected override ValidationResult IsValid(object value, ValidationContext validationContext)
+    {
+        if ((int)value % 2 == 0 || (int)value == 0)
+        {
+            return new ValidationResult("Your number must be odd");
+        } else {
             return ValidationResult.Success;
         }
     }

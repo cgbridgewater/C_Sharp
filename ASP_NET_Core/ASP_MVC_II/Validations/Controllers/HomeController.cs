@@ -17,6 +17,10 @@ public class HomeController : Controller
     [HttpGet("")]
     public IActionResult Index()
     {
+        HttpContext.Session.SetString("UserName", "Chris"); // set session string call in render side -> <h4>My session user's name is: @Context.Session.GetString("UserName")</h4>
+
+        HttpContext.Session.SetInt32("Digit", 44); // set session digit call in render side--> <h4>My session user's name is: @Context.Session.GetInt32("Digit")</h4>
+
         return View();
     }
 
@@ -44,5 +48,13 @@ public class HomeController : Controller
     public IActionResult Error()
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+    }
+
+
+    [HttpGet("clear")]
+    public IActionResult ClearSession()
+    {
+        HttpContext.Session.Clear();
+        return RedirectToAction("Index");
     }
 }
