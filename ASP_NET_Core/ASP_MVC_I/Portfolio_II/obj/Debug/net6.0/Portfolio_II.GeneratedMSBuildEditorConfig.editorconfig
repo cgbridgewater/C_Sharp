@@ -8,21 +8,21 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Portfolio_II
 build_property.RootNamespace = Portfolio_II
-build_property.ProjectDir = C:\Users\cgbri\Desktop\Coding Dojo\C#\ASP_NET_Core\ASP_MVC_I\Portfolio_II\
+build_property.ProjectDir = c:\Users\cgbri\Desktop\Coding Dojo\C#\ASP_NET_Core\ASP_MVC_I\Portfolio_II\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\cgbri\Desktop\Coding Dojo\C#\ASP_NET_Core\ASP_MVC_I\Portfolio_II
+build_property.MSBuildProjectDirectory = c:\Users\cgbri\Desktop\Coding Dojo\C#\ASP_NET_Core\ASP_MVC_I\Portfolio_II
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/cgbri/Desktop/Coding Dojo/C\#/ASP_NET_Core/ASP_MVC_I/Portfolio_II/Views/Main/Contact.cshtml]
+[c:/Users/cgbri/Desktop/Coding Dojo/C\#/ASP_NET_Core/ASP_MVC_I/Portfolio_II/Views/Main/Contact.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpblxDb250YWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/cgbri/Desktop/Coding Dojo/C\#/ASP_NET_Core/ASP_MVC_I/Portfolio_II/Views/Main/Index.cshtml]
+[c:/Users/cgbri/Desktop/Coding Dojo/C\#/ASP_NET_Core/ASP_MVC_I/Portfolio_II/Views/Main/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpblxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/cgbri/Desktop/Coding Dojo/C\#/ASP_NET_Core/ASP_MVC_I/Portfolio_II/Views/Main/Projects.cshtml]
+[c:/Users/cgbri/Desktop/Coding Dojo/C\#/ASP_NET_Core/ASP_MVC_I/Portfolio_II/Views/Main/Projects.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpblxQcm9qZWN0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

@@ -8,45 +8,45 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TestAppMCV
 build_property.RootNamespace = TestAppMCV
-build_property.ProjectDir = C:\Users\cgbri\Desktop\Coding Dojo\C#\ASP_NET_Core\ASP_MVC_II\TestAppMCV\
+build_property.ProjectDir = c:\Users\cgbri\Desktop\Coding Dojo\C#\ASP_NET_Core\ASP_MVC_II\TestAppMCV\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\cgbri\Desktop\Coding Dojo\C#\ASP_NET_Core\ASP_MVC_II\TestAppMCV
+build_property.MSBuildProjectDirectory = c:\Users\cgbri\Desktop\Coding Dojo\C#\ASP_NET_Core\ASP_MVC_II\TestAppMCV
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/cgbri/Desktop/Coding Dojo/C\#/ASP_NET_Core/ASP_MVC_II/TestAppMCV/Views/Home/Index.cshtml]
+[c:/Users/cgbri/Desktop/Coding Dojo/C\#/ASP_NET_Core/ASP_MVC_II/TestAppMCV/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/cgbri/Desktop/Coding Dojo/C\#/ASP_NET_Core/ASP_MVC_II/TestAppMCV/Views/Home/Privacy.cshtml]
+[c:/Users/cgbri/Desktop/Coding Dojo/C\#/ASP_NET_Core/ASP_MVC_II/TestAppMCV/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/cgbri/Desktop/Coding Dojo/C\#/ASP_NET_Core/ASP_MVC_II/TestAppMCV/Views/Home/TestPage.cshtml]
+[c:/Users/cgbri/Desktop/Coding Dojo/C\#/ASP_NET_Core/ASP_MVC_II/TestAppMCV/Views/Home/TestPage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUZXN0UGFnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/cgbri/Desktop/Coding Dojo/C\#/ASP_NET_Core/ASP_MVC_II/TestAppMCV/Views/Shared/Error.cshtml]
+[c:/Users/cgbri/Desktop/Coding Dojo/C\#/ASP_NET_Core/ASP_MVC_II/TestAppMCV/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/cgbri/Desktop/Coding Dojo/C\#/ASP_NET_Core/ASP_MVC_II/TestAppMCV/Views/Shared/_MyNewLayout.cshtml]
+[c:/Users/cgbri/Desktop/Coding Dojo/C\#/ASP_NET_Core/ASP_MVC_II/TestAppMCV/Views/Shared/_MyNewLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9NeU5ld0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/cgbri/Desktop/Coding Dojo/C\#/ASP_NET_Core/ASP_MVC_II/TestAppMCV/Views/Shared/_ValidationScriptsPartial.cshtml]
+[c:/Users/cgbri/Desktop/Coding Dojo/C\#/ASP_NET_Core/ASP_MVC_II/TestAppMCV/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/cgbri/Desktop/Coding Dojo/C\#/ASP_NET_Core/ASP_MVC_II/TestAppMCV/Views/_ViewImports.cshtml]
+[c:/Users/cgbri/Desktop/Coding Dojo/C\#/ASP_NET_Core/ASP_MVC_II/TestAppMCV/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/cgbri/Desktop/Coding Dojo/C\#/ASP_NET_Core/ASP_MVC_II/TestAppMCV/Views/_ViewStart.cshtml]
+[c:/Users/cgbri/Desktop/Coding Dojo/C\#/ASP_NET_Core/ASP_MVC_II/TestAppMCV/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/cgbri/Desktop/Coding Dojo/C\#/ASP_NET_Core/ASP_MVC_II/TestAppMCV/Views/Shared/_Layout.cshtml]
+[c:/Users/cgbri/Desktop/Coding Dojo/C\#/ASP_NET_Core/ASP_MVC_II/TestAppMCV/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-yujcnpbmwk
