@@ -1,17 +1,15 @@
 using Microsoft.EntityFrameworkCore;
-// This will access your models for your context file
-using TestProject.Models;
+
+using PetTestProject.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
-
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddSession();
-
 
 builder.Services.AddDbContext<MyContext>(options =>
 {
@@ -29,7 +27,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-app.UseSession(); 
+app.UseSession();
 
 app.UseAuthorization();
 
