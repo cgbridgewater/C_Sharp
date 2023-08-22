@@ -1,0 +1,57 @@
+@model Dish 
+
+<header>
+        <div class="NavFlex">
+            <h1>Add A New Dish!</h1>
+                <div class="NavLinkFlex">
+                        <a class="NavLink" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        <a class="NavLink" asp-area="" asp-controller="Home" asp-action="NewDish">Add New Dish Entry</a>
+                </div>
+        </div>
+</header>
+
+<form class="Form" asp-action="UpdateDish" asp-controller="Home" asp-route-Id="@Model.DishId" method="post">
+        <div class="Flex3">
+            <label asp-for="Name"></label>
+            <input asp-for="Name" class="Input">
+        </div>
+            <span class="Validation" asp-validation-for="Name"></span>
+        <br>
+        <div class="Flex3">
+            <label asp-for="Chef"></label>    
+            <input asp-for="Chef"class="Input">
+        </div>
+            <span class="Validation" asp-validation-for="Chef"></span>
+        <br>
+        <div class="Flex3">
+            <label asp-for="Tastiness"></label>    
+            <select asp-for="Tastiness" class="Input" >
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            
+            </select>
+        </div>
+            <span class="Validation" asp-validation-for="Tastiness"></span>
+        <br>
+
+        <div class="Flex3">
+            <label asp-for="Calories"></label>    
+            <input asp-for="Calories" class="Input">
+        </div>
+            <span class="Validation" asp-validation-for="Calories" min="1"></span>
+        <br>
+
+        <div class="Flex3">
+            <label asp-for="Description"></label>    
+            <textarea asp-for="Description" class="Input" cols="30" rows="5"></textarea>
+        </div>
+            <span class="Validation" asp-validation-for="Description"></span>
+        <br>
+        <br>
+        <div class="Center">
+            <input class="Button" type="submit" value="Edit Dish"/>
+        </div>
+</form>

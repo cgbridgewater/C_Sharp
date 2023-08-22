@@ -1,0 +1,36 @@
+@model Dish
+<header>
+        <div class="NavFlex">
+            <h1>Viewing: @Model.Name</h1>
+                <div class="NavLinkFlex">
+                        <a class="NavLink" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        <a class="NavLink" asp-area="" asp-controller="Home" asp-action="NewDish">Add New Dish Entry</a>
+                </div>
+        </div>
+</header>
+
+<div class="OneDishContainer">
+    <h2 class="Title">@Model.Name by @Model.Chef</h2>
+
+    <div>
+        <h4>Description: @Model.Description</h4>
+        <h5>Calories: @Model.Calories</h5>
+        <div class="Flex">
+            <h5>Tasiness Rating (out of 5): </h5>
+        @{
+            for(var i = 0; i< @Model.Tastiness; i++){
+            <h5>⭐</h5>
+
+            }
+        }
+        </div >
+        <div class="Flex2">
+            <a href="/dishes/@Model.DishId/edit"><button class="Button">Edit</button></a>
+            <form asp-action="DeleteDish" asp-controller="Home" asp-route-id="@Model.DishId" method="post">
+                <input class="Button Delete" type="submit" value="Delete">
+            </form>
+        </div>
+
+
+    </div>
+</div>
