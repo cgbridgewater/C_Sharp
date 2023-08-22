@@ -15,8 +15,20 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\cgbri\Desktop\Coding Dojo\C#\ORMs\PetTestProject
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/cgbri/Desktop/Coding Dojo/C\#/ORMs/PetTestProject/Views/Home/EditPet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFZGl0UGV0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/cgbri/Desktop/Coding Dojo/C\#/ORMs/PetTestProject/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cgbri/Desktop/Coding Dojo/C\#/ORMs/PetTestProject/Views/Home/NewPet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxOZXdQZXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cgbri/Desktop/Coding Dojo/C\#/ORMs/PetTestProject/Views/Home/OnePet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxPbmVQZXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/cgbri/Desktop/Coding Dojo/C\#/ORMs/PetTestProject/Views/Home/Privacy.cshtml]

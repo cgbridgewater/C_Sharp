@@ -1,8 +1,33 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@model List<Pet>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<table class="Table table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Name</th>
+      <th scope="col">Type</th>
+      <th scope="col">Age</th>
+      <th scope="col">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+  @{
+        foreach(Pet pet in @Model){
+            <tr>
+            <th scope="row">@pet.PetId</th>
+            <td><a href="/pets/@pet.PetId">@pet.PetName</a></td>
+            <td>@pet.PetType</td>
+            <td>@pet.PetAge</td>
+            <td>
+              <div class="Flex2">
+                <a href="/pets/@pet.PetId/edit"><button class="Button">Edit</button></a>
+                <form asp-action="DeletePet" asp-controller="Home" asp-route-id="@pet.PetId" method="post">
+                  <input class="Button Delete" type="submit" value="Delete">
+                </form>
+              </div>
+            </td>
+            </tr>
+        }
+    }
+  </tbody>
+</table>

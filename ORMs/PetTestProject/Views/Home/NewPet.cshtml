@@ -1,0 +1,33 @@
+
+@model Pet
+
+<h2>Add a new pet</h2>
+<form class="Form" asp-action="CreatePet" asp-controller="Home" method="post">
+        <div class="Flex">
+            <label asp-for="PetName"></label>
+            <input class="Input" asp-for="PetName" class="Input">
+        </div>
+            <span class="Validation" asp-validation-for="PetName"></span>
+        <br>
+        <div class="Flex">
+            <label asp-for="PetType"></label>    
+            <input class="Input" asp-for="PetType"class="Input">
+        </div>
+            <span class="Validation" asp-validation-for="PetType"></span>
+        <br>
+        <div class="Flex">
+            <label asp-for="PetAge"></label>    
+            <input class="Input" asp-for="PetAge" class="Input">
+        </div>
+            <span class="Validation" asp-validation-for="PetAge"></span>
+        <br>
+
+        <div class="Flex">
+            <label asp-for="HasFur"></label>    
+            <input asp-for="HasFur" class="Input">
+        </div>
+            <span class="Validation" asp-validation-for="HasFur"></span>
+        <br>
+        <br>
+        <input class="Button" type="submit" value="Add Pet"/>
+</form>

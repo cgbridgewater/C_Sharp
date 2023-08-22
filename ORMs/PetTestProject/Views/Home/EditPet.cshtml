@@ -1,0 +1,37 @@
+@model Pet
+
+<form class="Form" asp-action="UpdatePet" asp-controller="Home" asp-route-Id="@Model.PetId" method="post">
+        <h2>Update @Model.PetName's Info</h2>
+        <div class="Flex">
+            <label asp-for="PetName"></label>
+            <input class="Input" asp-for="PetName" class="Input">
+        </div>
+            <span class="Validation" asp-validation-for="PetName"></span>
+        <br>
+        <div class="Flex">
+            <label asp-for="PetType"></label>    
+            <input class="Input" asp-for="PetType"class="Input">
+        </div>
+            <span class="Validation" asp-validation-for="PetType"></span>
+        <br>
+        <div class="Flex">
+            <label asp-for="PetAge"></label>    
+            <input class="Input" asp-for="PetAge" class="Input">
+        </div>
+            <span class="Validation" asp-validation-for="PetAge"></span>
+        <br>
+
+        <div class="Flex">
+            <label asp-for="HasFur"></label>    
+            <input asp-for="HasFur" class="Input">
+        </div>
+            <span class="Validation" asp-validation-for="HasFur"></span>
+        <br>
+        <br>
+        <div class="Center">
+            <input class="Button" type="submit" value="Update Pet"/>
+        </div>
+</form>
+        <div class="Center">
+            <a asp-area="" asp-controller="Home" asp-action="Index"><button class="Button Delete">Cancel</button></a>
+        </div>
