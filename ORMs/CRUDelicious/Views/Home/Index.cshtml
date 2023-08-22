@@ -9,18 +9,36 @@
         </div>
 </header>
 
-
-<h2 class="Title">Check out some recent dishes</h2>
-
-@{
-    foreach(Dish food in @Model){
-        <div class="Flex">
-            <h3><a href="/dishes/@food.DishId">@food.Name</a> by @food.Chef </h3>
-            @{
-                for(var i = 0; i< @food.Tastiness; i++){
-                <h4>⭐</h4>
-                }
+<div class="Flex2">
+    <div class="LeftBox">
+        <h2 class="Title">Check out some recent dishes</h2>
+        @{
+            foreach(Dish food in @Model){
+                <div class="Flex">
+                    <h3 class="Result"><a href="/dishes/@food.DishId">@food.Name</a> by @food.Chef </h3>
+                    @{
+                        for(var i = 0; i< @food.Tastiness; i++){
+                        <h4>⭐</h4>
+                        }
+                    }
+                </div>
             }
-        </div>
-    }
-}
+        }
+    </div>
+    <div class="RightBox">
+        <h2 class="Title">Top Rated Dish</h2>
+        @{
+            foreach(Dish dish in @ViewBag.TopDish)
+            {
+                <div class="Flex">
+                    <h2 class="Result"><a href="/dishes/@dish.DishId">@dish.Name</a></h2>
+                            @{
+                                for(var i = 0; i< @dish.Tastiness; i++){
+                                <h4>⭐</h4>
+                                }
+                            }
+                </div>
+            }
+        }
+    </div>
+</div>

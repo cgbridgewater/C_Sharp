@@ -46,10 +46,10 @@ body {
 }
 
 .Title {
-  margin: 30px 0;
+  margin: 30px 10px;
   width: 100%;
   box-shadow: 0px 15px 10px -15px #111;
-  color:blue;
+  color:blueviolet;
 }
 
 .Button {
@@ -112,8 +112,14 @@ body {
 
 
 /* INDEX PAGE STYLE */
+.LeftBox, .RightBox {
+  width: 45%;
+  border: 3px solid blue;
+}
 
-
+.Result {
+  margin: 5px 10px;
+}
 
 
 

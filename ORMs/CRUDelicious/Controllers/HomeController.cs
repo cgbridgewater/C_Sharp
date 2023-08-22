@@ -20,6 +20,7 @@ public class HomeController : Controller
     public IActionResult Index() 
     {
         List<Dish> AllDishes = _context.Dishes.OrderByDescending(n => n.CreatedAt).ToList();
+        ViewBag.TopDish = _context.Dishes.OrderByDescending(t=> t.Tastiness).Take(1).ToList();
         return View(AllDishes);
     }
 
