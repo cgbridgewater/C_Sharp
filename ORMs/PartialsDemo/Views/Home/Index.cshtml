@@ -1,10 +1,37 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@model List<Product>
+<header>
+        <div class="NavFlex">
+            <h1>Welcome to the Partials Demo!</h1>
+                <div class="NavLinkFlex">
+                        <a class="NavLink" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        <a class="NavLink" asp-area="" asp-controller="Home" asp-action="NewForm">Add New User Or Product</a>
+                </div>
+        </div>
+</header>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <!-- partial insertion from _MyPartial in Home Views -->
-    @await Html.PartialAsync("_MyPartial")
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="Flex2">
+    <div class="LeftBox">
+        <h2 class="Title">Items</h2>
+        @{
+            foreach(Product item in @Model){
+                <div class="Flex">
+                    <h3 class="Result">@item.ProductName:</h3>
+                    <h4 class="Result">$@item.Price</h4>
+                </div>
+            }
+        }
+    </div>
+
+    <div class="RightBox">
+        <h2 class="Title">Users</h2>
+        @{
+            foreach(User User in @ViewBag.AllUsers)
+            {
+                <div class="Flex">
+                    <h3 class="Result">@User.Username</h3>
+                    <h4 class="Result">@User.Age</h4>
+                </div>
+            }
+        }
+    </div>
 </div>

@@ -1,0 +1,19 @@
+
+<header>
+        <div class="NavFlex">
+            <h1>Add A New User or Product!</h1>
+                <div class="NavLinkFlex">
+                        <a class="NavLink" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                </div>
+        </div>
+</header>
+<br>
+<br>
+<br>
+<h1 class="Center">Add a Product</h1>
+@await Html.PartialAsync("_ProductForm")
+<br>
+<br>
+<br>
+<h1 class="Center">Add a User</h1>
+@await Html.PartialAsync("_UserForm")

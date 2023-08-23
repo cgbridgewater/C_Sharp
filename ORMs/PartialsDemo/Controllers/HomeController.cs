@@ -6,22 +6,68 @@ namespace PartialsDemo.Controllers;
 
 public class HomeController : Controller
 {
+    private MyContext _context;
     private readonly ILogger<HomeController> _logger;
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(ILogger<HomeController> logger, MyContext context)
     {
+        _context = context;
         _logger = logger;
     }
 
-    public IActionResult Index()
+    [HttpGet("")] // View ALL - index
+    public IActionResult Index() 
+    {
+        List<Product> AllProducts = _context.Products.OrderByDescending(p => p.CreatedAt).ToList();
+        ViewBag.AllUsers = _context.Users.OrderByDescending(u => u.CreatedAt).ToList();
+        return View(AllProducts);
+    }
+
+    [HttpGet("forms/new")] // NEW FORM
+    public IActionResult NewForm()
     {
         return View();
     }
 
-    public IActionResult Privacy()
+
+    [HttpPost("user/create")] // Create User Action Form
+    public IActionResult CreateUser(User newUser)
     {
-        return View();
+        if(ModelState.IsValid)
+        {
+            _context.Add(newUser);
+            _context.SaveChanges();
+            return RedirectToAction("Index");
+        } else {
+            return View("NewForm");
+        }
     }
+
+
+    [HttpPost("product/create")] // Create Product Action Form
+    public IActionResult CreateProduct(Product newProduct)
+    {
+        if(ModelState.IsValid)
+        {
+            _context.Add(newProduct);
+            _context.SaveChanges();
+            return RedirectToAction("Index");
+        } else {
+            return View("NewForm");
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()

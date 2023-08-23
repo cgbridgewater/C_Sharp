@@ -1,0 +1,18 @@
+@model User
+<form class="Form" asp-action="CreateUser" asp-controller="Home" method="post">    
+    <div class="mb-3">        
+        <div class="Flex3">
+            <label asp-for="Username">User Name</label>        
+            <input asp-for="Username" class="Input">        
+        </div>
+        <span asp-validation-for="Username" class="text-danger"></span>    
+    </div>    
+    <div class="mb-3">        
+        <div class="Flex3">
+            <label asp-for="Age"></label>        
+            <input asp-for="Age" class="Input">        
+        </div>
+        <span asp-validation-for="Age" class="text-danger"></span>    
+    </div>    
+    <input type="submit" value="Add User">
+</form>
