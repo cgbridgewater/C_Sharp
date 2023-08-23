@@ -13,7 +13,7 @@ public class Product
 
     [Required(ErrorMessage = "REQUIRED!")]
     [Range(0,5000000, ErrorMessage="Must be greater than 0.")]  
-    public double Price { get; set; }
+    public double? Price { get; set; }
 
 
     public DateTime CreatedAt { get; set; } = DateTime.Now;

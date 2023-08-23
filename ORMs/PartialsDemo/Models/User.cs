@@ -13,7 +13,7 @@ public class User
 
     [Required(ErrorMessage = "REQUIRED!")]
     [Range(0,120, ErrorMessage="Must be greater than 0.")]  
-    public int Age { get; set; }
+    public int? Age { get; set; }
 
 
     public DateTime CreatedAt { get; set; } = DateTime.Now;

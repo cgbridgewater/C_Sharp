@@ -1,18 +1,20 @@
 @model Product
 <form class="Form" asp-action="CreateProduct" asp-controller="Home" method="post">    
     <div class="mb-3">   
-        <div class="Flex3">
+        <div class="Flex2">
             <label asp-for="ProductName">Product Name</label>        
             <input class="Input" asp-for="ProductName" class="form-control">        
         </div>
-        <span asp-validation-for="ProductName" class="text-danger"></span>    
+        <span asp-validation-for="ProductName" class="Validation"></span>    
     </div>    
     <div class="mb-3">        
-        <div class="Flex3">
+        <div class="Flex2">
             <label asp-for="Price"></label>        
             <input class="Input" asp-for="Price" class="form-control">        
         </div>
-        <span asp-validation-for="Price" class="text-danger"></span>    
-    </div>    
-    <input type="submit" value="Add Product">
+        <span asp-validation-for="Price" class="Validation"></span>    
+    </div>
+    <div class="Flex">
+        <input class="Button" type="submit" value="Add Product">
+    </div>
 </form>
