@@ -130,12 +130,6 @@ public class HomeController : Controller
     }
 
 
-
-
-
-
-
-
     [HttpGet("logout")]
     public IActionResult Logout()
     {
