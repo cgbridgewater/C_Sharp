@@ -1,0 +1,15 @@
+@model User
+
+<h2>View all of your posts</h2>
+@{
+foreach(Post post in Model.AllPosts){
+    <p>@post.Content on @post.CreatedAt</p>
+}
+
+}
+
+<br>
+<br>
+<br>
+<br>
+<h5>this is a one to many relationship page showing 1 user that has many posts</h5>

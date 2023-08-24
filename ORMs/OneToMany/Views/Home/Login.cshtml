@@ -1,0 +1,26 @@
+@model LoginUser
+<form class="Form" asp-action="LoginUser" asp-controller="Home" method="post">    
+    <h2>Log In</h2>
+
+    <div class="mb-3">        
+        <div class="Flex2">
+            <label asp-for="LEmail"></label>        
+            <input asp-for="LEmail" type="email" class="Input">        
+        </div>
+        <span asp-validation-for="LEmail" class="Validation"></span>
+    </div> 
+
+    <div class="mb-3">        
+        <div class="Flex2">
+            <label asp-for="LPassword"></label>        
+            <input asp-for="LPassword" type="password" class="Input">        
+        </div>
+        <span asp-validation-for="LPassword"  class="Validation"></span>
+    </div>    
+
+    <div class="Flex">
+        <input class="Button" type="submit" value="Log In">
+    </div>
+    <p class="Flex">Not registered? <a class="nav-link text-primary" asp-area="" asp-controller="Home" asp-action="Register">Register Here</a></p>
+</form>
+

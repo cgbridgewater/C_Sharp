@@ -1,0 +1,17 @@
+@model Post
+@{
+    var UserId = @Context.Session.GetInt32("UserId");
+}
+
+<div>
+    <form class="Form" asp-action="CreateContent" asp-controller="Home" method="post">    
+        <div class="mb-3">        
+            <div class="Flex2">
+                <label asp-for="Content"></label>        
+                <input asp-for="Content" class="Input">        
+            </div>
+            <span asp-validation-for="Content" class="Validation"></span>
+        </div> 
+        <input class="Button" type="submit" value="Log In">
+    </form>
+</div>

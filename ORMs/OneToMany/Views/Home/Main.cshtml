@@ -1,0 +1,31 @@
+@model Post
+<div class="Logout">
+    <a class="LogoutButton" asp-area="" asp-controller="Home" asp-action="Logout">Log Out!</a>
+</div>
+
+<h2 class="Title">Welcome to the conversation!</h2>
+
+
+<div class="Flex3">
+    <div class="TextBox">
+        @{
+            foreach(Post post in @ViewBag.NewestPost){
+                if(post.UserId == @Context.Session.GetInt32("UserId")){
+                    <div class="Right">
+                        <p>You said: <span class="right">@post.Content</span></p>
+                        <p>On: @post.CreatedAt</p>
+                    </div>
+                } else{
+                    <div class="Left">
+                        <p>@post.Creator.FirstName @post.Creator.LastName said: <span class="left">@post.Content</span></p>
+                        <p>On: @post.CreatedAt</p>
+                    </div>
+                }
+            }
+        }
+    </div>
+
+    @await Html.PartialAsync("_CommentForm")    
+
+
+</div>
