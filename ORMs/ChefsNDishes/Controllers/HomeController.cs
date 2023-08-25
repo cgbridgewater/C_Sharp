@@ -80,6 +80,7 @@ public class HomeController : Controller
             _context.SaveChanges();
             return RedirectToAction("Dishes");
         } else {
+            ViewBag.AllUsers  = _context.Users.ToList();
             return View("NewDish");
         }
     }
