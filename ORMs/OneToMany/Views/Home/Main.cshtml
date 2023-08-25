@@ -3,7 +3,7 @@
     <a class="LogoutButton" asp-area="" asp-controller="Home" asp-action="Logout">Log Out!</a>
 </div>
 
-<h2 class="Title">Welcome to the conversation!</h2>
+<h2 class="Title">Welcome to the conversation @Context.Session.GetString("UserName")!</h2>
 
 
 <div class="Flex3">
@@ -21,6 +21,7 @@
                         <p>On: @post.CreatedAt</p>
                     </div>
                 }
+
             }
         }
     </div>

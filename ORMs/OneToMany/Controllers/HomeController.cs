@@ -50,6 +50,7 @@ public class HomeController : Controller
             _context.Add(newUser);
             _context.SaveChanges();
             HttpContext.Session.SetInt32("UserId", newUser.UserId);
+            HttpContext.Session.SetString("UserName", newUser.FirstName);
             return RedirectToAction("Main");
 
         } else {
@@ -85,6 +86,7 @@ public class HomeController : Controller
             } else{
             // Handle success (this should route to an internal page) 
             HttpContext.Session.SetInt32("UserId", userInDb.UserId);
+            HttpContext.Session.SetString("UserName", userInDb.FirstName);
             return RedirectToAction("Main"); 
             }
         } else {
@@ -128,6 +130,19 @@ public class HomeController : Controller
         User? MyUser = _context.Users.Include(p => p.AllPosts).FirstOrDefault(i => i.UserId == (int)HttpContext.Session.GetInt32("UserId"));
         return View(MyUser);
     }
+
+    [HttpGet("allposts")]
+    public IActionResult AllPosts()
+    {
+        List<Post> AllPosts = _context.Posts.Include(c => c.Creator).OrderByDescending(n => n.CreatedAt).ToList();
+        return View(AllPosts);
+    }
+
+
+
+
+
+
 
 
     [HttpGet("logout")]

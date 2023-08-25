@@ -1,0 +1,9 @@
+
+<h2>View all posts</h2>
+
+@foreach(Post p in Model)
+    {
+    <div>
+        <p>@p.Creator.FirstName posted: @p.Content @p.CreatedAt</p>
+    </div>
+    }
