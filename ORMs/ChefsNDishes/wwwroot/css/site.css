@@ -4,40 +4,52 @@
 }
 
 body {
-  margin-bottom: 60px;
+  min-height: 80dvh;
+  background-image: url(https://watermark.lovepik.com/photo/20211209/large/lovepik-vegetable-food-background-material-picture_501697064.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-
-.Flex {
-  display: flex;
-  justify-content: space-between;
-  margin: 2px;
-}
-
-.End {
-  text-align: end;
-  margin-right: 20px ;
+.Title{
+  color: green;
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 5px black;
+  margin: 45px;
 }
 
 /* Form Style */
 .Form {
-  width: 370px;
+  width: 350px;
   margin:20px auto;
-  padding: 15px;
+  padding: 5px;
   border: 2px solid blue;
   background-color: lightgray;
+  box-shadow:
+  7px 7px 20px 0px green,
+  4px 4px 5px 0px green,
+  -7px -7px 20px 0px #0002,
+  -4px -4px 5px 0px #0001;
+}
+
+.Flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2px;
 }
 
 .Input {
   width: 225px;
   background-color: wheat;
   border: 2px solid blue;
+  margin:3px;
 }
 
 .Input:focus {
   background-color: lightskyblue;
 }
-
 
 .Button {
   width: 130px;
@@ -84,6 +96,12 @@ body {
   top: 5px;
 }
 
+.ButtonCenter{
+  display: flex;
+  justify-content: center;
+  margin:3px;
+}
+
 .Validation {
   font-weight: 800;
   color: red;
@@ -91,31 +109,16 @@ body {
 
 
 /* Results Container */
-.ResultsContainer {
+.table {
   width: 40%;
   min-width: 380px;
   margin: 20px auto 0;
   border: 3px solid blue;
   padding: 5px;
+  box-shadow:
+  7px 7px 20px 0px green,
+  4px 4px 5px 0px green,
+  -7px -7px 20px 0px #0002,
+  -4px -4px 5px 0px #0001;
 }
 
-.Center {
-  text-align: center;
-}
-
-.Comments {
-  border-bottom: 2px solid blue;
-}
-
-.CommentBox {
-  text-align: end;
-  width: 80%;
-  min-height: 20px;
-  margin: 1% 1% 1% 20%;
-}
-
-.LinkContainer {
-  width: 40%;
-  min-width: 380px;
-  margin: 10px auto;
-}

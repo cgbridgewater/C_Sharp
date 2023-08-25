@@ -23,7 +23,8 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        List<User> AllUsers = _context.Users.ToList();
+        List<User> AllUsers = _context.Users.Include(user => user.AllDishes).ToList();
+
         return View(AllUsers);
     }
 
@@ -52,10 +53,11 @@ public class HomeController : Controller
 
 
 
-    [HttpGet("/dishes")]
+    [HttpGet("dishes")]
     public IActionResult Dishes()
     {
-        return View();
+        List<Dish> AllDishes = _context.Dishes.Include(c => c.Chef).OrderByDescending(t => t.Tastiness).ToList();
+        return View(AllDishes);
     }
 
 
@@ -63,6 +65,7 @@ public class HomeController : Controller
     [HttpGet("dishes/new")] // NEW FORM
     public IActionResult NewDish()
     {
+        ViewBag.AllUsers  = _context.Users.ToList();
         return View();
     }
 
@@ -75,7 +78,7 @@ public class HomeController : Controller
         {
             _context.Add(newDish);
             _context.SaveChanges();
-            return RedirectToAction("Index");
+            return RedirectToAction("Dishes");
         } else {
             return View("NewDish");
         }
