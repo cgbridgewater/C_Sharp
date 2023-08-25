@@ -1,0 +1,29 @@
+@model User
+
+<div class="text-center">
+    <h1 class="display-5">Add a new Chef!</h1>
+</div>
+
+        <form class="Form" asp-action="CreateChef" asp-controller="Home">
+            <div class="Flex">
+                <label asp-for="FirstName"></label>
+                <input asp-for="FirstName" class="Input">
+            </div>
+            <span class="Validation" asp-validation-for="FirstName"></span>
+
+            <div class="Flex">
+                <label asp-for="LastName"></label>
+                <input asp-for="LastName" class="Input">
+            </div>
+            <span class="Validation" asp-validation-for="LastName"></span>
+
+            <div class="Flex">
+                <label asp-for="Age"></label>    
+                <input asp-for="Age" type="date" class="Input" value='@DateTime.Today.ToString("yyyy-MM-dd")'>
+            </div>
+                <span class="Validation" asp-validation-for="Age"></span>
+
+            <input class="Button" type="submit" value="Submit!">
+
+        </form>
+

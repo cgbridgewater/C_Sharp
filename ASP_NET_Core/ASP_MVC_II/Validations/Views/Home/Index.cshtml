@@ -32,7 +32,7 @@
 
         <div class="Flex">
             <label asp-for="Birthday"></label>    
-            <input asp-for="Birthday" type="date" class="Input" placeholder(RightNow) >
+            <input asp-for="Birthday" type="date" class="Input" value="@DateTime.Today" >
         </div>
             <span class="Validation" asp-validation-for="Birthday"></span>
         <br>

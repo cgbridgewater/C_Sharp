@@ -43,6 +43,8 @@ public class ValidateDateAttribute : ValidationAttribute
 {
 protected override ValidationResult? IsValid(object? value, ValidationContext validationContext)
     {
+        Console.WriteLine(value);
+        Console.WriteLine("HERE!!");
         DateTime CurrentTime = DateTime.Now;
         string date = CurrentTime.ToString("yyyy-MM-dd");
         DateTime eighteen = CurrentTime.AddYears(-18);

@@ -28,7 +28,8 @@ namespace PartialsDemo.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime(6)");
 
-                    b.Property<double>("Price")
+                    b.Property<double?>("Price")
+                        .IsRequired()
                         .HasColumnType("double");
 
                     b.Property<string>("ProductName")
@@ -49,7 +50,8 @@ namespace PartialsDemo.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<int>("Age")
+                    b.Property<int?>("Age")
+                        .IsRequired()
                         .HasColumnType("int");
 
                     b.Property<DateTime>("CreatedAt")

@@ -19,9 +19,10 @@ public class HomeController : Controller
     public IActionResult Index() 
     {
         List<Product> AllProducts = _context.Products.OrderByDescending(p => p.CreatedAt).ToList();
-        ViewBag.AllUsers = _context.Users.OrderByDescending(u => u.CreatedAt).ToList();
+        ViewBag.AllUsers = _context.Users.ToList();
         return View(AllProducts);
     }
+
 
     [HttpGet("forms/new")] // NEW FORM
     public IActionResult NewForm()
