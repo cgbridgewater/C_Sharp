@@ -109,11 +109,18 @@ body {
 
 
 /* Results Container */
-.table {
-  width: 40%;
-  min-width: 380px;
-  margin: 20px auto 0;
+.TableContainer {
+  display: flex;
+  margin: 0 auto;
+  max-height: 475px;
+  width: 600px;
+  overflow-y: scroll;
+  overflow-x: hidden;
   border: 3px solid blue;
+}
+
+.table {
+  margin: 0 auto;
   padding: 5px;
   box-shadow:
   7px 7px 20px 0px green,
