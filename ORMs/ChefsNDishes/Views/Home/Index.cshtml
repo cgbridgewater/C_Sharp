@@ -12,16 +12,16 @@
             </tr>
         </thead>
         <tbody>
-                @foreach(User chef in Model){
-                    int now = int.Parse(DateTime.Now.ToString("yyyyMMdd"));
-                    int dob = int.Parse(@chef.Age.ToString("yyyyMMdd"));
-                    int Age = (now - dob) / 10000;
-                    <tr>
-                        <td>@chef.FirstName @chef.LastName</td>
-                        <td class="text-center">@Age</td>
-                        <td class="text-center">@chef.AllDishes.Count()</td>
-                    </tr>
-                }
+            @foreach(User chef in Model){
+                int now = int.Parse(DateTime.Now.ToString("yyyyMMdd"));
+                int dob = int.Parse(@chef.Age.ToString("yyyyMMdd"));
+                int Age = (now - dob) / 10000;
+                <tr>
+                    <td>@chef.FirstName @chef.LastName</td>
+                    <td class="text-center">@Age</td>
+                    <td class="text-center">@chef.AllDishes.Count()</td>
+                </tr>
+            }
         </tbody>
     </table>
 </div>
