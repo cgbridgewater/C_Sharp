@@ -112,7 +112,8 @@ body {
 .TableContainer {
   display: flex;
   margin: 0 auto;
-  max-height: 475px;
+  height: 47dvh;
+  min-height: 250px;
   width: 600px;
   overflow-y: scroll;
   overflow-x: hidden;
