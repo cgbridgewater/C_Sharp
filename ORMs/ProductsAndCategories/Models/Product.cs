@@ -4,9 +4,21 @@ namespace ProductsAndCategories.Models;
 public class Product
 {
     [Key]
-    public int ProductId { get; set; }    
-    public string Name { get; set; }  
+    public int ProductId { get; set; }
+
+    [Required]
+    [MinLength(2, ErrorMessage="Must be at least 2 characters in length.")]
+    [Display(Name = "Name:")]
+    public string Name { get; set; }
+
+    [Required]
+    [MinLength(2, ErrorMessage="Must be at least 2 characters in length.")]
+    [Display(Name = "Description:")]
     public string Description { get; set; }
+
+    [Required]
+    [Range(0, double.MaxValue)]
+    [Display(Name = "Price:")]
     public double Price { get; set; }
     
     public DateTime CreatedAt { get; set; } = DateTime.Now;

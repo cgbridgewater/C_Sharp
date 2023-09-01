@@ -1,7 +1,26 @@
 ﻿@{
     ViewData["Title"] = "Categories";
 }
+@model Category
 
-<div class="text-center">
-    <h1 class="display-4">Categories test page</h1>
+
+<div class="Flex3">
+    <div class="Left">
+        <h1>Add A New Category</h1>
+        <form class="Form" asp-action="CreateProduct" asp-controller="Home" method="post">    
+                <div class="Flex2">
+                    <label asp-for="Name"></label>        
+                    <input asp-for="Name" class="Input">        
+                </div>
+                <span asp-validation-for="Name" class="Validation"></span>
+            <div class="Center">
+                <input class="Button" type="submit" value="Log In">
+            </div>
+        </form>
+    </div>
+
+    <div class="Right">
+        <h1>All Categories</h1>
+    
+    </div>
 </div>

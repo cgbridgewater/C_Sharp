@@ -18,6 +18,7 @@ public class HomeController : Controller
     [HttpGet("")]
     public IActionResult Index()
     {
+        ViewBag.AllProducts = _context.Products.OrderByDescending(n => n.Name).ToList();
         return View();
     }
 
@@ -26,6 +27,32 @@ public class HomeController : Controller
     {
         return View();
     }
+
+
+    [HttpPost("post/createproduct")] // create product form action
+    public IActionResult CreateProduct(Product newProduct)
+    {
+        if(ModelState.IsValid)
+        {
+            _context.Add(newProduct);
+            _context.SaveChanges();
+            return RedirectToAction("Index");
+        } else{
+            ViewBag.AllProducts = _context.Products.OrderByDescending(n => n.Name).ToList();
+            return View("Index");
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
 
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
