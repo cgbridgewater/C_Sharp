@@ -11,7 +11,6 @@ public class HomeController : Controller
 {
     private MyContext _context;
     private readonly ILogger<HomeController> _logger;
-
     public HomeController(ILogger<HomeController> logger, MyContext context)
     {
         _context = context;
@@ -21,7 +20,8 @@ public class HomeController : Controller
 
     ////   VIEWS   ///
 
-    [HttpGet("")] // View All Products => create and show all products
+    // View All Products => create and show all products
+    [HttpGet("")] 
     public IActionResult Index()
     {
         ViewBag.AllProducts = _context.Products.OrderBy(n => n.Name).ToList();
@@ -29,7 +29,8 @@ public class HomeController : Controller
     }
 
 
-    [HttpGet("categories")] // View All Categories  => create and show all categories
+    // View All Categories  => create and show all categories
+    [HttpGet("categories")] 
     public IActionResult Categories()
     {
         ViewBag.AllCategories = _context.Categories.OrderBy(n => n.Name).ToList();
@@ -37,7 +38,8 @@ public class HomeController : Controller
     }
 
 
-    [HttpGet("products/{Id}")]  // View One Product
+    // View One Product
+    [HttpGet("products/{Id}")] 
     public IActionResult OneProduct(int Id)
     {
         // get product by Id
@@ -64,7 +66,8 @@ public class HomeController : Controller
     }
 
 
-    [HttpGet("categories/{Id}")]  // View One Category
+    // View One Category
+    [HttpGet("categories/{Id}")]  
     public IActionResult OneCategory(int Id)
     {
         // get category by Id
@@ -93,7 +96,8 @@ public class HomeController : Controller
 
     ////   CREATE PRODUCTS AND CATEGORIES   ////
 
-    [HttpPost("post/createproduct")] // create product form action
+    // create product form action
+    [HttpPost("post/createproduct")] 
     public IActionResult CreateProduct(Product newProduct)
     {
         if(ModelState.IsValid)
@@ -108,7 +112,8 @@ public class HomeController : Controller
     }
 
 
-    [HttpPost("post/createcategory")] // create category form action
+    // create category form action
+    [HttpPost("post/createcategory")] 
     public IActionResult CreateCategory(Category newCategory)
     {
         if(ModelState.IsValid)
@@ -125,7 +130,8 @@ public class HomeController : Controller
 
     ////   CREATE ASSOCIATIONS   ////
 
-    [HttpPost("productaddcat")] // join categories action
+    // join categories action
+    [HttpPost("productaddcat")] 
     public IActionResult productAddCat(Association newAssoc)
     {
             _context.Add(newAssoc);
@@ -134,7 +140,8 @@ public class HomeController : Controller
     }
 
 
-    [HttpPost("catandprod")] // join products action
+    // join products action
+    [HttpPost("catandprod")] 
     public IActionResult catAddProd(Association newAssoc)
     {
             _context.Add(newAssoc);
@@ -145,7 +152,8 @@ public class HomeController : Controller
 
     ////   REMOVE ASSOCIATIONS   ////
 
-    [HttpPost("catandprod/{Id}/delete")] // remove association => return to category by Id
+    // remove association => return to category by Id
+    [HttpPost("catandprod/{Id}/delete")] 
     public IActionResult removeProd(int Id)
     {
         Association ProdToRemove = _context.Associations.SingleOrDefault(p => p.AssociationId == Id);
@@ -155,7 +163,8 @@ public class HomeController : Controller
     }
 
 
-    [HttpPost("productaddcat/{Id}/delete")] // remove association => return to product by Id
+    // remove association => return to product by Id
+    [HttpPost("productaddcat/{Id}/delete")] 
     public IActionResult removeCat(int Id)
     {
         Association? CatToRemove = _context.Associations.SingleOrDefault(c => c.AssociationId == Id);
