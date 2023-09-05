@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
-
 using ProductsAndCategories.Models;
 
 namespace ProductsAndCategories.Controllers;
@@ -18,6 +17,7 @@ public class HomeController : Controller
         _context = context;
         _logger = logger;
     }
+
 
     [HttpGet("")]
     public IActionResult Index()
@@ -48,7 +48,6 @@ public class HomeController : Controller
             return View("Index");
         }
     }
-
 
 
     [HttpPost("post/createcategory")] // create category form action
@@ -105,19 +104,17 @@ public class HomeController : Controller
     }
 
 
-
     [HttpGet("categories/{Id}")]  // View One Product
     public IActionResult OneCategory(int Id)
     {
-        // get product by Id
+        // get category by Id
         ViewBag.OneCategory = _context.Categories.FirstOrDefault( i => i.CategoryId == Id);
 
-        
-        // get list of all categories created
+        // get list of all products created
         List<Product> AllProducts = _context.Products.OrderBy(n => n.Name).ToList();
         ViewBag.AllProducts = AllProducts;
 
-        // Get the products with joined categories
+        // Get the categories with joined products
         var CatsAndProds =_context.Categories
                                 .Include(a => a.Associations)
                                 .ThenInclude(a => a.Product)
@@ -126,11 +123,11 @@ public class HomeController : Controller
 
         // Create an empty list
         List<Product> JoinedProds = new List<Product>();
-        // push all associated categories to list // this must be done to use "EXCEPT"
+        // push all associated products to list // this must be done to use "EXCEPT" function
         foreach (var c in CatsAndProds.Associations){
             JoinedProds.Add(c.Product);
         }
-        // compare using Except and filter out 'associated' categories
+        // compare using Except and filter out 'associated' products
         List<Product> FilteredProds = AllProducts.Except(JoinedProds).ToList();
         ViewBag.FilteredProds = FilteredProds;
         return View();
@@ -144,10 +141,6 @@ public class HomeController : Controller
             _context.SaveChanges();
             return RedirectToAction("OneCategory", new { Id = newAssoc.CategoryId });
     }
-
-
-
-
 
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
