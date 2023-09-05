@@ -14,5 +14,5 @@ public class Category
     public DateTime CreatedAt { get; set; } = DateTime.Now;
     public DateTime UpdatedAt { get; set; } = DateTime.Now;
 
-    public List<Association> Prod { get; set; } = new List<Association>();
+    public List<Association> Associations { get; set; } = new List<Association>();
 }

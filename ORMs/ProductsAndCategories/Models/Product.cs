@@ -24,5 +24,5 @@ public class Product
     public DateTime CreatedAt { get; set; } = DateTime.Now;
     public DateTime UpdatedAt { get; set; } = DateTime.Now;
 
-    public List<Association> Cats { get; set; } = new List<Association>();
+    public List<Association> Associations { get; set; } = new List<Association>();
 }

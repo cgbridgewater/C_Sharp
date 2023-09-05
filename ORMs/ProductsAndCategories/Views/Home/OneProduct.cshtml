@@ -1,0 +1,48 @@
+@model Association
+
+
+    <div>
+        <h1 class="text-center mt-5">@ViewBag.OneProduct.Name</h1>
+    </div>
+
+
+    <div class="Flex3"> 
+        <div class="Left">
+            <h1>Categories</h1>
+                @if( ViewBag.ProdsAndCats.Associations != null)
+                {
+                    @foreach(Association p in ViewBag.ProdsAndCats.Associations)
+                    {
+                        <p>@p.Category.Name</p>
+                    }
+                }
+        </div>
+
+
+        <div class="Right">
+            <h1>Add Category</h1>
+            <form class="Form" asp-action="productAddCat" asp-controller="Home">
+                <div class="Flex2">
+                    <input type="hidden" asp-for="ProductId" value="@ViewBag.OneProduct.ProductId">
+                    <label asp-for="CategoryId">Select A Category</label>
+                    <select class="Input text-center" asp-for="CategoryId">
+                            @if( ViewBag.FilteredCats != null)
+                            {
+                                @foreach(var c in  ViewBag.FilteredCats)
+                                    {
+                                        <option value="@c.CategoryId">@c.Name</option>        
+                                    }
+                            }
+                    </select> 
+                </div>
+                <div class="Center">
+                    @if(ViewBag.FilteredCats.Count == 0)
+                    {
+                        <input disabled class="Button" type="submit" value="Submit!">
+                    } else {
+                        <input class="Button" type="submit" value="Submit!">
+                    }
+                </div>
+            </form>
+        </div>
+    </div>

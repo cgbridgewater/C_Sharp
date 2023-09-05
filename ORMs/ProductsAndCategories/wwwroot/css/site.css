@@ -112,9 +112,20 @@
 
 .Right {
   padding: 5px;
-    text-align: end;
+  text-align: start;
+  width: 370px;
 }
+
 .Left {
   padding: 5px;
   text-align: start;
+}
+
+li {
+  list-style: none;
+  text-align: start;
+}
+
+li a {
+  text-decoration: none;
 }

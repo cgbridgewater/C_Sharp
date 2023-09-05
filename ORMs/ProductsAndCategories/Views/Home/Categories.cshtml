@@ -1,26 +1,30 @@
-﻿@{
+﻿@model Category
+@{
     ViewData["Title"] = "Categories";
 }
-@model Category
 
 
 <div class="Flex3">
     <div class="Left">
         <h1>Add A New Category</h1>
-        <form class="Form" asp-action="CreateProduct" asp-controller="Home" method="post">    
+        <form class="Form" asp-action="CreateCategory" asp-controller="Home" method="post">    
                 <div class="Flex2">
                     <label asp-for="Name"></label>        
                     <input asp-for="Name" class="Input">        
                 </div>
                 <span asp-validation-for="Name" class="Validation"></span>
             <div class="Center">
-                <input class="Button" type="submit" value="Log In">
+                <input class="Button" type="submit" value="Create">
             </div>
         </form>
     </div>
 
     <div class="Right">
         <h1>All Categories</h1>
-    
+        @{
+            foreach(Category category in @ViewBag.AllCategories){
+                <li><a href="categories/@category.CategoryId">@category.Name</a></li>
+            }
+        }
     </div>
 </div>
