@@ -1,0 +1,50 @@
+@model User
+<form class="Form" asp-action="CreateUser" asp-controller="Home" method="post">
+    <h2>Register</h2>
+    <div class="mb-3">        
+        <div class="Flex2">
+            <label asp-for="FirstName"></label>        
+            <input asp-for="FirstName" class="Input">        
+        </div>
+        <span asp-validation-for="FirstName" class="Validation"></span>    
+    </div>    
+
+    <div class="mb-3">        
+        <div class="Flex2">
+            <label asp-for="LastName"></label>        
+            <input asp-for="LastName" class="Input">        
+        </div>
+        <span asp-validation-for="LastName" class="Validation"></span>    
+    </div>    
+
+    <div class="mb-3">        
+        <div class="Flex2">
+            <label asp-for="Email"></label>        
+            <input asp-for="Email" type="email" class="Input">        
+        </div>
+        <span asp-validation-for="Email" class="Validation"></span>    
+    </div> 
+
+    <div class="mb-3">        
+        <div class="Flex2">
+            <label asp-for="Password"></label>        
+            <input asp-for="Password" type="password" class="Input">        
+        </div>
+        <span asp-validation-for="Password" class="Validation"></span>    
+    </div>    
+
+    <div class="mb-3">        
+        <div class="Flex2">
+            <label asp-for="PasswordConfirm"></label>        
+            <input asp-for="PasswordConfirm" type="password" class="Input">        
+        </div>
+        <span asp-validation-for="PasswordConfirm" class="Validation"></span>    
+    </div>    
+
+    <div class="Flex">
+        <input class="Button" type="submit" value="Add User">
+    </div>
+    <p class="Flex">Already a member?  <a class="nav-link text-primary" asp-area="" asp-controller="Home" asp-action="Login">Login Here</a></p>
+</form>
+
+

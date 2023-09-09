@@ -1,0 +1,123 @@
+/*  STYLE FOR ALL PAGES  */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: lightgoldenrodyellow;
+}
+
+.Flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Flex2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Flex3 {
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Center {
+  display: flex;
+  justify-content: center;
+}
+
+.Button, .LogoutButton {
+  width: 120px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px;
+  font-weight: 800;
+  background: blue;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow:inset 2px 2px 2px 0px rgba(103, 147, 174, 0.8),
+  7px 7px 20px 0px rgba(0,0,0,.1),
+  4px 4px 5px 0px rgba(0,0,0,.1);
+  box-shadow: 0px 15px 10px -10px #111;
+  border: 2px solid black;
+}
+
+.Button:hover, .LogoutButton:hover {
+  color: black;
+  background-color: aqua;
+}
+
+.Button:hover:after, .LogoutButton:hover::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  box-shadow:
+  -7px -7px 20px 0px green,
+  -4px -4px 5px 0px green,
+  7px 7px 20px 0px #0002,
+  4px 4px 5px 0px #0001;
+  transition: all 0.3s ease;
+  border: 2px solid aqua;
+}
+
+.Button:active, .LogoutButton:active {
+  top: 5px;
+}
+
+.LogoutButton, .Link {
+  text-decoration: none;
+  text-align: center;
+  padding: 6px;
+  color: aqua;
+}
+
+.Logout {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Title {
+  text-align: center;
+}
+
+/* Form Style */
+.Form {
+  width: 400px;
+  margin:20px auto;
+  padding: 15px;
+  border: 2px solid blue;
+  background-color: lightgray;
+  box-shadow: 0px 15px 10px -10px #111;
+}
+
+.Input {
+  width: 225px;
+  background-color: wheat;
+  border: 2px solid blue;
+}
+
+.Input:focus {
+  background-color: lightskyblue;
+}
+
+.Validation {
+  font-weight: 800;
+  color: red;
+}
+
+.Uppercase {
+  text-transform:capitalize;
+}
