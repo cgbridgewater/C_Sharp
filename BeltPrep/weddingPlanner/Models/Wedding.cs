@@ -1,7 +1,6 @@
 #pragma warning disable CS8618
 using System.ComponentModel.DataAnnotations;
 namespace weddingPlanner.Models;
-
 public class Wedding
 {
     [Key]
@@ -19,25 +18,28 @@ public class Wedding
 
     [Required(ErrorMessage = "REQUIRED!")]  
     [DataType(DataType.Date)]
-    [ValidateDate] 
+    [ValidateDate]
     [Display(Name = "Event Date:")]
-    public string Date {get; set;}
+    public DateTime EventDate {get; set;}
 
     [Required(ErrorMessage = "REQUIRED!")] 
     [MinLength(2, ErrorMessage="Must be at least 2 characters in length.")] 
     [Display(Name = "Event Address:")]
-    public int Address {get; set;}
+    public string Address {get; set;}
 
     public  DateTime CreatedAt {get; set;} = DateTime.Now;
     public  DateTime UpdatedAt {get; set;} = DateTime.Now;
 }
 
+
+
+
 public class ValidateDateAttribute : ValidationAttribute
 {
 protected override ValidationResult? IsValid(object? value, ValidationContext validationContext)
     {
-        DateTime currentTime = DateTime.Now;
-        if ((DateTime)value < currentTime)
+            DateTime CurrentTime = DateTime.Now;
+        if ((DateTime)value < CurrentTime)
         {
             return new ValidationResult("Date must be in future!");
         } 
@@ -46,3 +48,4 @@ protected override ValidationResult? IsValid(object? value, ValidationContext va
         }
     }
 }
+

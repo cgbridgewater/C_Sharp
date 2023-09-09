@@ -139,7 +139,20 @@ public class HomeController : Controller
         }
     }
 
-
+    [HttpPost("weddings/create")]
+    public IActionResult CreateWedding(Wedding newWedding)
+    {
+        if(ModelState.IsValid)
+        {
+            _context.Add(newWedding);
+            _context.SaveChanges();
+            return RedirectToAction("Weddings");
+        } else{
+            int? Id = HttpContext.Session.GetInt32("UserId");
+            ViewBag.LoggedUser = _context.Users.FirstOrDefault( u => u.UserId == Id);
+            return View("PlanWedding");
+        }
+    }
 
 
 
