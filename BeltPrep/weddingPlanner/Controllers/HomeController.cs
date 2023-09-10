@@ -46,7 +46,20 @@ public class HomeController : Controller
     {
         int? Id = HttpContext.Session.GetInt32("UserId");
         ViewBag.LoggedUser = _context.Users.FirstOrDefault( u => u.UserId == Id);
-        return View();
+        List<Wedding> allWeddings = _context.Weddings.OrderByDescending(n => n.CreatedAt).ToList();
+        return View(allWeddings);
+    }
+
+
+    // View One Wedding
+    [SessionCheck]
+    [HttpGet("weddings/{Id}")]
+    public IActionResult OneWedding(int Id)
+    {
+        int? UId = HttpContext.Session.GetInt32("UserId");
+        ViewBag.LoggedUser = _context.Users.FirstOrDefault( u => u.UserId == UId);
+        Wedding? OneWedding = _context.Weddings.FirstOrDefault(w => w.WeddingId == Id);
+        return View(OneWedding);
     }
 
 

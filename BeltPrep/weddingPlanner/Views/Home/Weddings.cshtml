@@ -1,6 +1,39 @@
-
-
+@model List<Wedding>
 <h2 class="Title">Coming Soon!</h2>
 
+<!-- display table for showing upcoming events -->
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Wedding of</th>
+      <th scope="col">Date</th>
+      <th scope="col">Guest Count</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    @{
+        foreach(Wedding w in @Model){
+            <tr>
+
+                <td>
+                    <a href="/weddings/@w.WeddingId">@w.Bride & @w.Groom</a>
+                </td>
+                <td>
+                @{
+                    DateTime date = @w.EventDate;
+                    string stringDate = date.ToString("MMMM d") + (date.Day == 1 ? "st" : (date.Day == 2 ? "nd" : (date.Day == 3 ? "rd" : "th"))) + date.ToString(", yyyy");
+                }
+                @stringDate
+                
+                </td>
+                <td>add count from many to many joins</td>
+                <td>add Creator option to delete, or user option to rsvp/cancel</td>
+            </tr>
+        }
+    }
 
 
+  </tbody>
+</table>
