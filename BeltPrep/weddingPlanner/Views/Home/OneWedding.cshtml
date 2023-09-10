@@ -1,0 +1,27 @@
+@model Wedding
+<header>
+        <div class="NavFlex">
+            <h1>To Be Married: @Model.Bride & @Model.Groom</h1>
+        </div>
+</header>
+
+<div class="OneWedding Container">
+    <h4 class="Title">
+        Join @Model.Bride & @Model.Groom on 
+        @{
+            DateTime date = @Model.EventDate;
+            string stringDate = date.ToString("MMMM d") + (date.Day == 1 ? "st" : (date.Day == 2 ? "nd" : (date.Day == 3 ? "rd" : "th"))) + date.ToString(", yyyy");
+        }
+        @stringDate as they exchange vows in front of family and loved ones.
+    </h4>
+
+
+    <h3>Guests:</h3>
+    <ul>
+        <li>!! add in guests from RSVP join here!!</li>
+
+    </ul>
+
+
+
+</div>
