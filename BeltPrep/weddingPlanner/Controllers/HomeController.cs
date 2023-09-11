@@ -47,8 +47,10 @@ public class HomeController : Controller
     {
         int? Id = HttpContext.Session.GetInt32("UserId");
         ViewBag.LoggedUser = _context.Users.FirstOrDefault( u => u.UserId == Id);
-        List<Wedding> allWeddings = _context.Weddings.OrderByDescending(n => n.CreatedAt).ToList();
-        return View(allWeddings);
+        ViewBag.allWeddings = _context.Weddings.OrderByDescending(n => n.CreatedAt).Include(c => c.Creator).ToList();
+
+        // List<Wedding> allWeddings = _context.Weddings.OrderByDescending(n => n.CreatedAt).ToList();
+        return View();
     }
 
 
@@ -97,6 +99,9 @@ public class HomeController : Controller
         return RedirectToAction("Index");
     }
 
+
+
+
     //////// POST ACTIONS ////////
 
     // Create New User
@@ -113,7 +118,6 @@ public class HomeController : Controller
                 ModelState.AddModelError("Email", "Email is already used");            
                 return View("Register");        
             }
-
             PasswordHasher<User> Hasher = new PasswordHasher<User>();   
             newUser.Password = Hasher.HashPassword(newUser, newUser.Password);            
             _context.Add(newUser);
@@ -124,6 +128,7 @@ public class HomeController : Controller
             return View("Register");
         }   
     }
+
 
     // Login User
     [HttpPost("users/login")]
@@ -172,12 +177,15 @@ public class HomeController : Controller
     }
 
 
-
-
-
-
-
-
+    // Delete Wedding Event
+    [HttpPost("Weddings/{Id}/delete")] // Delete Action
+    public IActionResult DeleteWedding(int Id)
+    {
+        Wedding? WeddingToDelete = _context.Weddings.SingleOrDefault(w=> w.WeddingId == Id);
+        _context.Weddings.Remove(WeddingToDelete);
+        _context.SaveChanges();
+        return RedirectToAction("Weddings");
+    }
 
 
 
