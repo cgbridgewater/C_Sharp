@@ -39,6 +39,9 @@ public class User
     [Compare("Password")]
     [Display(Name = "Confirm Password")]
     public string PasswordConfirm { get; set; }
+
+    public List<Wedding> AllWeddings { get; set; } = new List<Wedding>();
+    public List<Rsvp> Rsvps { get; set; } = new List<Rsvp>();
 }
 
 

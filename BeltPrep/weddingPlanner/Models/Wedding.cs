@@ -29,6 +29,9 @@ public class Wedding
 
     public  DateTime CreatedAt {get; set;} = DateTime.Now;
     public  DateTime UpdatedAt {get; set;} = DateTime.Now;
+
+    public User? Creator { get; set; }
+    public List<Rsvp> Rsvps { get; set; } = new List<Rsvp>();
 }
 
 
