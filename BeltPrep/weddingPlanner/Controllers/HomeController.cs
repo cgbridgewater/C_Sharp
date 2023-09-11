@@ -153,11 +153,14 @@ public class HomeController : Controller
         }
     }
 
+
+    // Create new wedding event
     [HttpPost("weddings/create")]
     public IActionResult CreateWedding(Wedding newWedding)
     {
         if(ModelState.IsValid)
         {
+            newWedding.UserId = (int)HttpContext.Session.GetInt32("UserId");
             _context.Add(newWedding);
             _context.SaveChanges();
             return RedirectToAction("Weddings");

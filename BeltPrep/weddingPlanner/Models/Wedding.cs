@@ -30,7 +30,10 @@ public class Wedding
     public  DateTime CreatedAt {get; set;} = DateTime.Now;
     public  DateTime UpdatedAt {get; set;} = DateTime.Now;
 
+    // 1:many join 
+    public int UserId { get; set; }
     public User? Creator { get; set; }
+    // n:m join
     public List<Rsvp> Rsvps { get; set; } = new List<Rsvp>();
 }
 

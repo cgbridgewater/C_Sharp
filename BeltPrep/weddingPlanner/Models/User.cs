@@ -40,7 +40,9 @@ public class User
     [Display(Name = "Confirm Password")]
     public string PasswordConfirm { get; set; }
 
+    // 1:m join
     public List<Wedding> AllWeddings { get; set; } = new List<Wedding>();
+    // n:m join
     public List<Rsvp> Rsvps { get; set; } = new List<Rsvp>();
 }
 
