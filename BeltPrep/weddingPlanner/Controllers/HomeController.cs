@@ -47,9 +47,20 @@ public class HomeController : Controller
     {
         int? Id = HttpContext.Session.GetInt32("UserId");
         ViewBag.LoggedUser = _context.Users.FirstOrDefault( u => u.UserId == Id);
-        ViewBag.allWeddings = _context.Weddings.OrderByDescending(n => n.CreatedAt).Include(c => c.Creator).ToList();
+        // ViewBag.allWeddings = _context.Weddings.OrderByDescending(n => n.CreatedAt).Include(c => c.Creator).ToList();
 
-        // List<Wedding> allWeddings = _context.Weddings.OrderByDescending(n => n.CreatedAt).ToList();
+        var weddings  = _context.Weddings
+                            .Include(r => r.Guests)
+                            .ThenInclude(w => w.User)
+                            .ToList();
+        ViewBag.weddings = weddings;
+
+
+
+
+
+
+
         return View();
     }
 
@@ -62,6 +73,12 @@ public class HomeController : Controller
         int? UId = HttpContext.Session.GetInt32("UserId");
         ViewBag.LoggedUser = _context.Users.FirstOrDefault( u => u.UserId == UId);
         Wedding? OneWedding = _context.Weddings.FirstOrDefault(w => w.WeddingId == Id);
+        
+        var WeddingsAndUsers = _context.Weddings
+                            .Include(r => r.Guests) //Rsvps
+                            .ThenInclude(w => w.User)
+                            .FirstOrDefault(u => u.WeddingId == Id);
+        ViewBag.WeddingRsvps = WeddingsAndUsers;
         return View(OneWedding);
     }
 
@@ -191,10 +208,25 @@ public class HomeController : Controller
 
 
 
+    // Create RSVP Associations 
+    [HttpPost("RSVP")]
+    public IActionResult RSVP(Rsvp newRsvp)
+    {
+        _context.Add(newRsvp);
+        _context.SaveChanges();
+        return RedirectToAction("Weddings");
+    }
 
 
-
-
+    // Remove RSVP Associations
+    [HttpPost("RSVP/{Id}/remove")]
+    public IActionResult rsvpRemove(int Id)
+    {
+        Rsvp rsvpToRemove = _context.Rsvps.SingleOrDefault(r => r.RsvpId == Id);
+        _context.Rsvps.Remove(rsvpToRemove);
+        _context.SaveChanges();
+        return RedirectToAction("Weddings");
+    }
 
 
 

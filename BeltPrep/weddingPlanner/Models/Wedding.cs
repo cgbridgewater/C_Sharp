@@ -34,7 +34,7 @@ public class Wedding
     public int UserId { get; set; }
     public User? Creator { get; set; }
     // n:m join
-    public List<Rsvp> Rsvps { get; set; } = new List<Rsvp>();
+    public List<Rsvp> Guests { get; set; } = new List<Rsvp>();
 }
 
 

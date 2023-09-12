@@ -1,6 +1,6 @@
 @model Wedding
-
-<h2 class="Title">Coming Soon!</h2>
+@{int LoggedUser = (int)@Context.Session.GetInt32("UserId");}
+<h2 class="Title">All Upcoming Events</h2>
 
 <!-- display table for showing upcoming events -->
 <table class="table">
@@ -15,7 +15,7 @@
   <tbody>
 
     @{
-        foreach(Wedding w in @ViewBag.allWeddings){
+        foreach(var w in @ViewBag.weddings){
             <tr>
 
                 <td>
@@ -31,13 +31,14 @@
                 <td>add count from many to many joins</td>
                 <td>
                 @{
-                    if(@w.UserId == @Context.Session.GetInt32("UserId")){
+                    if(w.UserId == @Context.Session.GetInt32("UserId")){
                         <form asp-action="DeleteWedding" asp-controller="Home" asp-route-id="@w.WeddingId" method="post">
                             <input class="Button Delete" type="submit" value="Delete">
                         </form>
-                    } else {
-                        <p>add user option to rsvp/cancel</p>
-                    }
+                    } 
+
+
+                    
                 }
 
                 

@@ -18,7 +18,13 @@
 
     <h3>Guests:</h3>
     <ul>
-        <li>!! add in guests from RSVP join here!!</li>
+        <li>
+
+                    @foreach(Rsvp r in @ViewBag.WeddingRsvps.Guests){
+                        <p>@r.User.FirstName @r.User.LastName</p>
+                    }
+                
+        </li>
 
     </ul>
 
