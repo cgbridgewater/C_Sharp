@@ -25,22 +25,22 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1 justify-content-end px-5">
                         <li class="nav-item">
-                            <a class="nav-link text-primary" asp-area="" asp-controller="Home" asp-action="Weddings">Home</a>
+                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Weddings">Home</a>
                         </li>
-                        <li class="nav-link text-primary">|</li>
+                        <li class="nav-link text-light">|</li>
                         @{
                             if( @Context.Session.GetInt32("UserId") == null){
                                 <li class="nav-item">
-                                    <a class="nav-link text-primary" asp-area="" asp-controller="Home" asp-action="Login">Login</a>
+                                    <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Login">Login</a>
                                 </li>
                             }
                         }
                         @{
                             if( @Context.Session.GetInt32("UserId") != null){
                                 <li class="nav-item d-flex">
-                                        <a class="nav-link text-primary" asp-area="" asp-controller="Home" asp-action="PlanWedding">Plan A Wedding</a>
-                                        <li class="nav-link text-primary">|</li>
-                                        <a class="nav-link text-primary" asp-area="" asp-controller="Home" asp-action="Logout">Log Out</a>
+                                        <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="PlanWedding">Plan A Wedding</a>
+                                        <li class="nav-link text-light">|</li>
+                                        <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Logout">Log Out</a>
                                 </li>
                             }
                         }

@@ -1,3 +1,4 @@
+@using System.Linq
 @model Wedding
 @{int LoggedUser = (int)@Context.Session.GetInt32("UserId");}
 <h2 class="Title">All Upcoming Events</h2>
@@ -14,40 +15,57 @@
   </thead>
   <tbody>
 
-    @{
-        foreach(var w in @ViewBag.weddings){
-            <tr>
-
-                <td>
-                    <a href="/weddings/@w.WeddingId">@w.Bride & @w.Groom</a>
-                </td>
-                <td>
-                @{
-                    DateTime date = @w.EventDate;
-                    string stringDate = date.ToString("MMMM d") + (date.Day == 1 ? "st" : (date.Day == 2 ? "nd" : (date.Day == 3 ? "rd" : "th"))) + date.ToString(", yyyy");
+    
+      @foreach(var w in @ViewBag.weddings)
+      {
+        <tr>
+          <td>
+              <a href="/weddings/@w.WeddingId">@w.Bride & @w.Groom</a>
+          </td>
+          <td>
+            @{
+                DateTime date = @w.EventDate;
+                string stringDate = date.ToString("MMMM d") + (date.Day == 1 ? "st" : (date.Day == 2 ? "nd" : (date.Day == 3 ? "rd" : "th"))) + date.ToString(", yyyy");
+            }
+            @stringDate
+          </td>
+          <td>@w.Guests.Count</td>
+          <td>
+            @if(w.UserId == LoggedUser)
+            {
+                <form asp-action="DeleteWedding" asp-controller="Home" asp-route-id="@w.WeddingId" method="post">
+                    <input class="Button Delete" type="submit" value="Delete">
+                </form>
+            }
+            else
+            {
+              var counter = 0;
+              foreach(var g in @w.Guests){
+                if(g.UserId == LoggedUser){
+                  counter++;
                 }
-                @stringDate
-                </td>
-                <td>add count from many to many joins</td>
-                <td>
-                @{
-                    if(w.UserId == @Context.Session.GetInt32("UserId")){
-                        <form asp-action="DeleteWedding" asp-controller="Home" asp-route-id="@w.WeddingId" method="post">
-                            <input class="Button Delete" type="submit" value="Delete">
-                        </form>
-                    } 
-
-
-                    
+              }
+              if(counter == 0)
+              {
+                  <form asp-action="RSVP" asp-controller="Home">
+                      <input type="hidden" asp-for="WeddingId" value="@w.WeddingId">
+                      <input type="hidden" asp-for="UserId" value="@LoggedUser">
+                      <input class="Button" type="submit" value="RSVP">
+                  </form>
+              }
+              else
+              {
+                foreach(var g in @w.Guests){
+                  if(g.UserId == LoggedUser){
+                    <form action="RSVP/@g.RsvpId/remove" method="post">   
+                      <input class="Button" type="submit" value="Cancel RSVP">
+                    </form>
+                  }
                 }
-
-                
-                
-                </td>
-            </tr>
-        }
-    }
-
-
+              }
+            }
+          </td>
+        </tr>
+      }
   </tbody>
 </table>

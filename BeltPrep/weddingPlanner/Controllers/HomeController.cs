@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
-
 using weddingPlanner.Models;
 
 namespace weddingPlanner.Controllers;
@@ -12,12 +11,15 @@ public class HomeController : Controller
 {
     private MyContext _context;
     private readonly ILogger<HomeController> _logger;
-
     public HomeController(ILogger<HomeController> logger, MyContext context)
     {
         _context = context;
         _logger = logger;
     }
+
+
+                                                //////// GET ACTIONS ////////
+
 
     // Landing Page
     [HttpGet("")]
@@ -46,21 +48,11 @@ public class HomeController : Controller
     public IActionResult Weddings()
     {
         int? Id = HttpContext.Session.GetInt32("UserId");
-        ViewBag.LoggedUser = _context.Users.FirstOrDefault( u => u.UserId == Id);
-        // ViewBag.allWeddings = _context.Weddings.OrderByDescending(n => n.CreatedAt).Include(c => c.Creator).ToList();
-
-        var weddings  = _context.Weddings
-                            .Include(r => r.Guests)
-                            .ThenInclude(w => w.User)
-                            .ToList();
+        ViewBag.LoggedUser = _context.Users.FirstOrDefault( u => u.UserId == Id );
+        var weddings = _context.Weddings
+            .Include(u => u.Guests)
+            .ToList();
         ViewBag.weddings = weddings;
-
-
-
-
-
-
-
         return View();
     }
 
@@ -73,9 +65,8 @@ public class HomeController : Controller
         int? UId = HttpContext.Session.GetInt32("UserId");
         ViewBag.LoggedUser = _context.Users.FirstOrDefault( u => u.UserId == UId);
         Wedding? OneWedding = _context.Weddings.FirstOrDefault(w => w.WeddingId == Id);
-        
         var WeddingsAndUsers = _context.Weddings
-                            .Include(r => r.Guests) //Rsvps
+                            .Include(r => r.Guests)
                             .ThenInclude(w => w.User)
                             .FirstOrDefault(u => u.WeddingId == Id);
         ViewBag.WeddingRsvps = WeddingsAndUsers;
@@ -94,20 +85,6 @@ public class HomeController : Controller
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     // Logout User
     [HttpGet("logout")]
     public IActionResult Logout()
@@ -117,60 +94,59 @@ public class HomeController : Controller
     }
 
 
+                                                //////// POST ACTIONS ////////
 
-
-    //////// POST ACTIONS ////////
 
     // Create New User
     [HttpPost("users/create")]   
-    public IActionResult CreateUser(User newUser)    
+    public IActionResult CreateUser(User newUser)
     {        
-        if(ModelState.IsValid)        
+        if(ModelState.IsValid)
         {
-            User? checkForEmail = _context.Users.FirstOrDefault(u => u.Email == newUser.Email);        
-            // If email exists with in the database 
-            if(checkForEmail != null)        
-            {            
-                // Add an error to ModelState and return to View!            
-                ModelState.AddModelError("Email", "Email is already used");            
+            User? checkForEmail = _context.Users.FirstOrDefault(u => u.Email == newUser.Email);
+            // If email exists with in the database
+            if(checkForEmail != null)
+            {
+                // Add an error to ModelState and return to View!
+                ModelState.AddModelError("Email", "Email is already used");
                 return View("Register");        
             }
-            PasswordHasher<User> Hasher = new PasswordHasher<User>();   
-            newUser.Password = Hasher.HashPassword(newUser, newUser.Password);            
+            PasswordHasher<User> Hasher = new PasswordHasher<User>();
+            newUser.Password = Hasher.HashPassword(newUser, newUser.Password);
             _context.Add(newUser);
             _context.SaveChanges();
             HttpContext.Session.SetInt32("UserId", newUser.UserId);
             return RedirectToAction("Weddings");
         } else {
             return View("Register");
-        }   
+        }
     }
 
 
     // Login User
     [HttpPost("users/login")]
     public IActionResult LoginUser(LoginUser userSubmission)
-    {    
-        if(ModelState.IsValid)    
-        {        
-            User? userInDb = _context.Users.FirstOrDefault(u => u.Email == userSubmission.LEmail);        
-            if(userInDb == null)        
+    {
+        if(ModelState.IsValid)
+        {
+            User? userInDb = _context.Users.FirstOrDefault(u => u.Email == userSubmission.LEmail);
+            if(userInDb == null)
             {            
-                ModelState.AddModelError("LEmail", "Invalid Email/Password");            
-                return View("Login");        
-            }   
-            PasswordHasher<LoginUser> hasher = new PasswordHasher<LoginUser>();                    
+                ModelState.AddModelError("LEmail", "Invalid Email/Password");
+                return View("Login");
+            }
+            PasswordHasher<LoginUser> hasher = new PasswordHasher<LoginUser>();
             var result = hasher.VerifyHashedPassword(userSubmission, userInDb.Password, userSubmission.LPassword);
-            if(result == 0)        
-            {            
-                ModelState.AddModelError("LEmail", "Invalid Email/Password");            
+            if(result == 0)
+            {
+                ModelState.AddModelError("LEmail", "Invalid Email/Password");
                 return View("Login");
             } else{
             HttpContext.Session.SetInt32("UserId", userInDb.UserId);
             return RedirectToAction("Weddings"); 
             }
         } else {
-            ModelState.AddModelError("LEmail", "Invalid Email/Password");    
+            ModelState.AddModelError("LEmail", "Invalid Email/Password");
             return View("Login");
         }
     }
@@ -205,8 +181,7 @@ public class HomeController : Controller
     }
 
 
-
-
+                                                ///////////////////  RSVPS  ////////////////////
 
     // Create RSVP Associations 
     [HttpPost("RSVP")]
@@ -227,8 +202,6 @@ public class HomeController : Controller
         _context.SaveChanges();
         return RedirectToAction("Weddings");
     }
-
-
 
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

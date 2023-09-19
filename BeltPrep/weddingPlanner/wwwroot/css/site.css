@@ -31,6 +31,24 @@ body {
   justify-content: center;
 }
 
+.OneWeddingContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Right {
+  padding: 5px;
+  text-align: start;
+  width: 370px;
+}
+
+.Left {
+  padding: 5px;
+  text-align: start;
+  width: 70%;
+  min-width: 370px;
+}
+
 .Button, .LogoutButton {
   width: 120px;
   height: 40px;
@@ -90,7 +108,7 @@ body {
 }
 
 .Title {
-  text-align: center;
+  text-align: start;
 }
 
 /* Form Style */
