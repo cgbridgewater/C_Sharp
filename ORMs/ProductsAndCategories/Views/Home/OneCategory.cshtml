@@ -13,10 +13,10 @@
                 {
                     @foreach(Association c in ViewBag.CatsAndProds.Associations)
                     {
-                        <div class="d-flex m-3 align-items-top">
+                        <div class="d-flex m-3 align-items-center justify-content-between">
                             <p>@c.Product.Name</p>
                             <form class="ms-3" action="/catandprod/@c.AssociationId/delete" method="post">    
-                                    <input class="bg-danger text-light p-1" type="submit" value="Remove Item">
+                                    <input class="Button bg-danger text-light p-1 mb-3" type="submit" value="Remove Item">
                             </form>
                         </div>
                     }
