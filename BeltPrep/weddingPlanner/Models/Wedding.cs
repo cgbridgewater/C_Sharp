@@ -1,6 +1,7 @@
 #pragma warning disable CS8618
 using System.ComponentModel.DataAnnotations;
 namespace weddingPlanner.Models;
+
 public class Wedding
 {
     [Key]
@@ -36,8 +37,6 @@ public class Wedding
     // n:m join
     public List<Rsvp> Guests { get; set; } = new List<Rsvp>();
 }
-
-
 
 
 public class ValidateDateAttribute : ValidationAttribute

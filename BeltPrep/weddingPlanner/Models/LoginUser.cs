@@ -1,17 +1,16 @@
 #pragma warning disable CS8618
 using System.ComponentModel.DataAnnotations;
-
 namespace weddingPlanner.Models;
+
 public class LoginUser
 {
-    // No other fields!
-    [Required]    
+    [Required]
     [EmailAddress]
     [Display(Name = "Email")]
-    public string LEmail { get; set; }  
+    public string LEmail { get; set; }
 
-    [Required]    
+    [Required]
     [DataType(DataType.Password)]
     [Display(Name = "Password")]
-    public string LPassword { get; set; } 
+    public string LPassword { get; set; }
 }
