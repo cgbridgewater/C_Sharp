@@ -38,7 +38,6 @@ public class Wedding
     public List<Rsvp> Guests { get; set; } = new List<Rsvp>();
 }
 
-
 public class ValidateDateAttribute : ValidationAttribute
 {
 protected override ValidationResult? IsValid(object? value, ValidationContext validationContext)
@@ -53,4 +52,3 @@ protected override ValidationResult? IsValid(object? value, ValidationContext va
         }
     }
 }
-
