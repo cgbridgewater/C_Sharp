@@ -15,6 +15,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\cgbri\Desktop\Coding Dojo\C#\BeltPrep\weddingPlanner
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/cgbri/Desktop/Coding Dojo/C\#/BeltPrep/weddingPlanner/Views/Home/EditWedding.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFZGl0V2VkZGluZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/cgbri/Desktop/Coding Dojo/C\#/BeltPrep/weddingPlanner/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
