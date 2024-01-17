@@ -1,0 +1,45 @@
+@model Wedding
+
+
+
+
+<h2 class="Title">Make Updates for the: @Model.Bride & @Model.Groom Wedding</h2>
+
+<form class="Form" asp-action="UpdateWedding" asp-controller="Home" asp-route-Id="@Model.WeddingId" method="post">    
+
+    <div class="mb-3">
+        <div class="Flex2">
+            <label asp-for="Bride"></label>
+            <input asp-for="Bride" class="Input">
+        </div>
+        <span asp-validation-for="Bride" class="Validation"></span>
+    </div> 
+
+    <div class="mb-3">
+        <div class="Flex2">
+            <label asp-for="Groom"></label>
+            <input asp-for="Groom" class="Input">
+        </div>
+        <span asp-validation-for="Groom" class="Validation"></span>
+    </div> 
+
+    <div class="mb-3">
+        <div class="Flex2">
+            <label asp-for="EventDate"></label>
+            <input asp-for="EventDate" type="date" class="Input" >
+        </div>
+        <span asp-validation-for="EventDate" class="Validation"></span>
+    </div> 
+
+    <div class="mb-3">
+        <div class="Flex2">
+            <label asp-for="Address"></label>
+            <input asp-for="Address" class="Input">
+        </div>
+        <span asp-validation-for="Address"  class="Validation"></span>
+    </div>
+
+    <div class="Flex">
+        <input class="Button" type="submit" value="Update">
+    </div>
+</form>

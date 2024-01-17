@@ -14,8 +14,6 @@
     </tr>
   </thead>
   <tbody>
-
-    
       @foreach(var w in @ViewBag.weddings)
       {
         <tr>
@@ -36,6 +34,9 @@
                 <form asp-action="DeleteWedding" asp-controller="Home" asp-route-id="@w.WeddingId" method="post">
                     <input class="Button Delete" type="submit" value="Delete">
                 </form>
+                <br>
+                <a href="/weddings/@w.WeddingId/edit"><button class="Button">Edit</button></a>
+
             }
             else
             {

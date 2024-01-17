@@ -85,6 +85,23 @@ public class HomeController : Controller
     }
 
 
+    // Edit Wedding Page
+    [SessionCheck]
+    [HttpGet("weddings/{Id}/edit")]
+    public IActionResult EditWedding(int Id)
+    {
+        int? UId = HttpContext.Session.GetInt32("UserId");
+        ViewBag.LoggedUser = _context.Users.FirstOrDefault( u => u.UserId == UId);
+        Wedding? WeddingToEdit = _context.Weddings.FirstOrDefault(e => e.WeddingId == Id);
+            if(WeddingToEdit != null)
+            {
+                return View(WeddingToEdit);
+            } else {
+                return RedirectToAction("Weddings");
+            }
+    }
+
+
     // Logout User
     [HttpGet("logout")]
     public IActionResult Logout()
@@ -167,6 +184,25 @@ public class HomeController : Controller
             ViewBag.LoggedUser = _context.Users.FirstOrDefault( u => u.UserId == Id);
             return View("PlanWedding");
         }
+    }
+
+
+    // Update Wedding Event
+    [HttpPost("weddings/{Id}/update")] 
+    public IActionResult UpdateWedding(int Id, Wedding NewVersion)
+    {
+        Wedding? OldVersion = _context.Weddings.FirstOrDefault(e => e.WeddingId == Id);
+            if(ModelState.IsValid)
+            {
+                OldVersion.Bride = NewVersion.Bride;
+                OldVersion.Groom = NewVersion.Groom;
+                OldVersion.EventDate = NewVersion.EventDate;
+                OldVersion.Address = NewVersion.Address;
+                _context.SaveChanges();
+                return RedirectToAction("OneWedding", new {id = Id} );
+            } else {
+                return View("UpdateWedding", OldVersion);
+            }
     }
 
 
