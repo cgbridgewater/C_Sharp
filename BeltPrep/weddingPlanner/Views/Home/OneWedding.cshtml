@@ -6,8 +6,8 @@
         <div class="Left">
             <h1>Join Us!!</h1>
             <h4 class="Title">
-                You've been invited the Wedding of <br> <br>
-                @Model.Bride & @Model.Groom on <br> <br>
+                You've been invited the wedding of <br> <br>
+                @Model.Bride & @Model.Groom<br> <br>
                 @{
                     DateTime date = @Model.EventDate;
                     string stringDate = date.ToString("MMMM d") + (date.Day == 1 ? "st" : (date.Day == 2 ? "nd" : (date.Day == 3 ? "rd" : "th"))) + date.ToString(", yyyy");

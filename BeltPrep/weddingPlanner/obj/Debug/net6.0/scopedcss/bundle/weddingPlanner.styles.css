@@ -1,7 +1,4 @@
 /* _content/weddingPlanner/Views/Shared/_Layout.cshtml.rz.scp.css */
-/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
-
 a.navbar-brand[b-13rr8ptdpy] {
   white-space: normal;
   text-align: center;
@@ -41,7 +38,7 @@ button.accept-policy[b-13rr8ptdpy] {
 }
 
 .footer[b-13rr8ptdpy] {
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
   white-space: nowrap;
