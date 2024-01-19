@@ -43,3 +43,7 @@ button.accept-policy[b-13rr8ptdpy] {
   white-space: nowrap;
   line-height: 60px;
 }
+
+main[b-13rr8ptdpy] {
+  min-height: 77dvh;
+}

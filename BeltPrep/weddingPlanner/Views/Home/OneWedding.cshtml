@@ -21,11 +21,11 @@
         <div class="Right">
             <h3>Guests:</h3>
             <ul>
-                <li>
                     @foreach(Rsvp r in @ViewBag.WeddingRsvps.Guests){
+                <li>
                         <p>@r.User.FirstName @r.User.LastName</p>
-                    }
                 </li>
+                    }
             </ul>
         </div>
     </div>
