@@ -18,7 +18,7 @@ public class HomeController : Controller
     }
 
 
-                                                //////// GET ACTIONS ////////
+            //////// GET ACTIONS ////////
 
 
     // Landing Page
@@ -111,7 +111,7 @@ public class HomeController : Controller
     }
 
 
-                                                //////// POST ACTIONS ////////
+            //////// POST ACTIONS ////////
 
 
     // Create New User
@@ -217,7 +217,7 @@ public class HomeController : Controller
     }
 
 
-                                                ///////////////////  RSVPS  ////////////////////
+            ///////////////////  RSVPS  ////////////////////
 
     // Create RSVP Associations 
     [HttpPost("RSVP")]
